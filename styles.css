@@ -260,3 +260,110 @@ ul {
   background: var(--primary-500);
   margin: 0 auto;
 }
+
+/* footer */
+
+footer .containerFooter .cardFooter img {
+  max-height: 110px;
+  width: auto;
+  margin-left: 50px;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  background-color: #192136;
+  padding-bottom: 20px;
+  padding-top: 200px;
+  margin-top: 200px;
+}
+
+footer .containerFooter {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  padding-top: 20px;
+}
+
+footer .cardFooter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+footer .cardFooter p {
+  color: white;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+footer .cardFooter h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #7b859e;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer .cardFooter a {
+  color: white;
+  font-weight: 300;
+  transition: 0.2s;
+}
+
+footer .cardFooter a:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+footer .containerContact{
+  position: absolute;
+  height: 250px;
+  background-color: #f3effe;
+  top: -125px;
+  left: 15%;
+  right: 15%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+footer .containerContact .containerText{
+  font-size: 35px;
+}
+
+footer .containerContact .containerText p{
+  font-weight: 600;
+}
+
+footer .containerContact .containerText p:nth-child(1){
+  color: #9775e8;
+}
+
+footer .containerContact .containerText p:nth-child(2){
+  color: #4b38a3;
+}
+
+footer .containerContact .containerButton{
+  width: max-content;
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+footer .containerContact .containerButton a{
+  background-color: #6a55ea;
+  color: white;
+  padding: 20px 25px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 4px solid #6a55ea;
+  transition: 0.3s;
+}
+
+footer .containerContact .containerButton a:hover{
+  border: 4px solid #192136;
+  background-color: transparent;
+  color: #192136;
+}
