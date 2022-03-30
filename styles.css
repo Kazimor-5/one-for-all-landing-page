@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400');
-@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
 /* ! ========================ROOTING======================= */
 
 html {
@@ -48,8 +47,8 @@ html {
   --green-dark: #0f5132;
 
   /* ? FONTS */
-  --headingFont: 'Spectral', serif;
-  --bodyFont: 'Karla', sans-serif;
+  --headingFont: 'Libre Baskerville', serif;
+  --bodyFont: 'Montserrat', sans-serif;
   --small-text: 0.7em;
 
   /* ? REST OF THE VARIABLES */
