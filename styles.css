@@ -260,3 +260,22 @@ ul {
   background: var(--primary-500);
   margin: 0 auto;
 }
+
+.slide-container{
+  position: relative;
+  margin: auto;
+}
+.slide{
+  display: none;
+}
+
+.next, .prev {
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: var(--white);
+  color: rgb(223, 30, 30);
+}
+.prev{
+ position: absolute;
+ margin-bottom: 100px;
+}
