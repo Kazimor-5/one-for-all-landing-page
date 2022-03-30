@@ -4,10 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo/logocolor.png" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- styles -->
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./styles.css" />
-    <script defer="./app.js"></script>
+    <!-- javascript -->
+    <script src="./app.js" defer></script>
     <title>#One4All</title>
   </head>
-  <body></body>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <button class="open-sidebar-btn"><i class="fas fa-bars"></i> menu</button>
+      <ul class="nav-links">
+        <li>
+          <button class="close-sidebar-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li class="nav-btn">
+          <a href="#"> présentation </a>
+        </li>
+        <li class="nav-btn">
+          <a href="#"> philosophie </a>
+        </li>
+        <li class="nav-btn">
+          <a href="#"> révolution </a>
+        </li>
+        <li class="nav-btn">
+          <a href="#"> fonctionnement </a>
+        </li>
+        <li class="nav-btn">
+          <a href="#"> évènements </a>
+        </li>
+        <li class="nav-btn">
+          <a href="#"> la ligue </a>
+        </li>
+        <li class="nav-btn">
+          <a href="#"> rejoignez-nous </a>
+        </li>
+        <li class="nav-btn">
+          <a href="#" id="adherer" class="btn">
+            <i class="fa-solid fa-heart"></i> adhérer
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- fin navbar -->
+  </body>
 </html>

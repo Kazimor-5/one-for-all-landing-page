@@ -15,17 +15,6 @@ html {
 :root {
   /* ! COLORS */
 
-  /* ? PRIMARY  */
-  --primary-100: #d3d8e4;
-  --primary-200: #a8b1c9;
-  --primary-300: #7c8aae;
-  --primary-400: #516393;
-  --primary-500: #253c78;
-  --primary-600: #1e3060;
-  --primary-700: #162448;
-  --primary-800: #0f1830;
-  --primary-900: #070c18;
-
   /* ? GREY */
   --grey-50: #f9fafb;
   --grey-100: #f3f4f6;
@@ -45,6 +34,8 @@ html {
   --red-dark: #842029;
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
+  --primary-purple: #6a55ea;
+  --secondary-purple: #40338c;
 
   /* ? FONTS */
   --headingFont: 'Libre Baskerville', serif;
@@ -122,6 +113,7 @@ small,
 
 a {
   text-decoration: none;
+  color: var(--textColor);
 }
 
 ul {
@@ -139,7 +131,7 @@ ul {
 
 .btn {
   cursor: pointer;
-  background: var(--primary-500);
+  background: var(--primary-purple);
   color: var(--white);
   border: transparent;
   border-radius: var(--border-radius);
@@ -152,7 +144,7 @@ ul {
 }
 
 .btn:hover {
-  background: var(--primary-700);
+  background: var(--secondary-purple);
   box-shadow: var(--shadow-3);
 }
 
@@ -259,4 +251,76 @@ ul {
   height: 0.25rem;
   background: var(--primary-500);
   margin: 0 auto;
+}
+
+/* ! NAVBAR */
+
+.navbar {
+  width: 100%;
+  box-shadow: var(--shadow-2);
+  padding: 0.75rem;
+}
+
+.nav-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  row-gap: 4rem;
+  z-index: 1;
+  transform: translate(-100%);
+  transition: var(--transition);
+}
+
+.open-sidebar-btn,
+.close-sidebar-btn {
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.show-sidebar {
+  transform: translate(0);
+}
+
+.nav-btn {
+  text-transform: capitalize;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-purple);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+li a::after {
+  opacity: 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+li a:hover::after,
+li a:focus::after {
+  transform: translate3d(0, 0, 0);
+}
+
+#adherer {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
 }
