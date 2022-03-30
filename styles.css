@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400');
-@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
 
 /* ! ========================ROOTING======================= */
 
@@ -46,10 +46,12 @@ html {
   --red-dark: #842029;
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
+  --primary-purple: #6a55ea;
+  --secondary-purple: #40338c;
 
   /* ? FONTS */
-  --headingFont: 'Spectral', serif;
-  --bodyFont: 'Karla', sans-serif;
+  --headingFont: 'Libre Baskerville', serif;
+  --bodyFont: 'Montserrat', sans-serif;
   --small-text: 0.7em;
 
   /* ? REST OF THE VARIABLES */
@@ -140,7 +142,7 @@ ul {
 
 .btn {
   cursor: pointer;
-  background: var(--primary-500);
+  background: var(--primary-purple);
   color: var(--white);
   border: transparent;
   border-radius: var(--border-radius);
@@ -153,7 +155,7 @@ ul {
 }
 
 .btn:hover {
-  background: var(--primary-700);
+  background: var(--secondary-purple);
   box-shadow: var(--shadow-3);
 }
 
@@ -260,4 +262,48 @@ ul {
   height: 0.25rem;
   background: var(--primary-500);
   margin: 0 auto;
+}
+
+/* HEADER  */
+
+header {
+  background-image: url(/one-for-all-landing-page/img/Header_One4all.jpg);
+  background-repeat: no-repeat;   
+  background-position: center;
+  width: 100%;
+  height: 1010px;
+  display: grid;
+  grid-column: repeat(2, 1fr);
+  /* margin: auto; */
+}
+
+.logoColor {
+  width: 75%;
+  height: 50%;
+  grid-column: 1;
+  display: block;
+  margin: auto;
+  align-items: center;
+}
+
+.second-grid {
+  grid-column: 2;
+  display: block;
+  margin: auto;
+}
+
+.logo-noir-blanc {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: auto;
+}
+
+.paragraphe-header {
+  color: #fff;
+  font-size: 1.5rem;
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 75%;
 }
