@@ -119,6 +119,7 @@ a {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .img {
@@ -258,11 +259,14 @@ ul {
 .navbar {
   width: 100%;
   box-shadow: var(--shadow-2);
-  padding: 0.75rem;
+  padding: 0.9rem;
+  border-bottom-left-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
 }
 
 .nav-links {
   position: fixed;
+  box-shadow: var(--shadow-2);
   top: 0;
   left: 0;
   width: 100%;
@@ -270,8 +274,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-evenly; */
-  row-gap: 4rem;
+  justify-content: space-around;
   z-index: 1;
   transform: translate(-100%);
   transition: var(--transition);
@@ -305,22 +308,74 @@ a::after {
   width: 100%;
   height: 2px;
   background-color: var(--primary-purple);
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 0.25s ease-out;
 }
 
-li a::after {
-  opacity: 1;
-  transform: translate3d(-100%, 0, 0);
+.nav-btn a::after {
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transform: scale(0);
 }
 
-li a:hover::after,
-li a:focus::after {
-  transform: translate3d(0, 0, 0);
+.nav-btn a:hover::after,
+.nav-btn a:focus::after {
+  transform-origin: bottom left;
+  transform: scale(1);
 }
 
-#adherer {
+.img-container {
+  display: none;
+}
+
+.adherer {
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
+}
+
+.adherer:hover #icon {
+  animation: pulse 2s infinite;
+}
+
+/* ! KEYFRAME */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1);
+  }
+}
+
+/* ! MEDIAQUERIES */
+@media screen and (min-width: 768px) {
+  .nav-links {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .close-sidebar-btn,
+  .open-sidebar-btn {
+    display: none;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: row;
+    position: initial;
+    z-index: 0;
+    background: none;
+    box-shadow: none;
+    transform: translate(0);
+    justify-content: space-evenly;
+  }
+
+  .img-container {
+    display: block;
+  }
 }
