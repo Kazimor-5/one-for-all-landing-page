@@ -369,6 +369,20 @@ ul {
     column-gap: 1.25rem;
   }
 
+  .social-links-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-links-content {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .social-links {
+    padding: 0;
+  }
+
   .cell {
     width: 70%;
   }
