@@ -323,23 +323,98 @@ height: auto;
  
   top: 0;
   text-align: center;
-  background-color: rgb(86, 10, 148); 
+  background-color: rgb(119, 0, 255);; 
   border-radius: 10px;
 }
+.challenge_text_boutton h4{
+  color: rgb(119, 0, 255); 
+  font-weight:800;
+  font-family: 'Libre Baskerville', serif;
+  text-transform:uppercase;
+}
+.challenge_titre{
+  grid-column: 1;
+  margin-left: 10px;
+ 
+}
+.challenge_titre hr{
+  margin-top: -10px;
+  width: 250px;
+  background-color: rgb(119, 0, 255);
+  border: 2px solid rgb(119, 0, 255);
+  size: 100px;
+ float: left;
+}
+.challenge{
+  margin-top: 50px;
+  display: grid;
+}
 
+.challenge_text_boutton{
+  grid-column: 4;
+  margin-top: 100px;
+  display: grid;
+}
+
+.boutton_challenge {
+
+  display: block;
+  margin: auto;
+  width: 70%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.boutton_challenge a {
+  color: #ffffff;
+
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  background-color: rgb(119, 0, 255);; 
+  border-radius: 10px;margin-top: 50px;
+}
+.challenge_text .special{
+  font-weight: 800;
+  font-family: 'Libre Baskerville', serif;
+  color: black;
+  font-style: normal;
+}
+
+.challenge_text span{
+  text-transform: capitalize;
+  font-style: italic;
+  font-family: 'Rock Salt', cursive;
+  color: rgba(0, 0, 0, 0.616);
+  font-weight: bold;
+}
 @media only screen and  (max-device-width : 680px) {
-  .boutton a {
+  .boutton a{
     width: 50%;
     padding: 5px; 
 
   }
+  .boutton_challenge a {
+    width: 50%;
+    padding: 5px; 
+
+  }
+  .boutton_challenge {
+    
+     width: 30%;
+     cursor: pointer;
+     font-size: small;
+  
+     
+   }
   .boutton {
    position: absolute;
     width: 30%;
     cursor: pointer;
     font-size: small;
     margin-top: -50px;
+    
   }
+  
   .prev,
   .next {
     cursor: pointer;
