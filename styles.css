@@ -276,11 +276,12 @@ ul {
   height: 100vh;
   background-image: url("./assets/philosophie/bg-yellow.png");
   background-repeat: no-repeat;
-  background-size: 100% 200%;
+  background-size: cover;
 }
 
 .gandhi {
-  width: 50%;
+  max-width: 580px;
+  height: 650px;
   min-width: 320px;
   position: absolute;
   top: 0;
@@ -288,8 +289,57 @@ ul {
   transform: translateX(-50%);
 }
 
+.wave {
+  position: relative;
+}
+
+.curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curve svg {
+  position: relative;
+  display: block;
+  width: calc(225% + 1.3px);
+  height: 64px;
+  transform: rotateY(180deg);
+}
+
+.curve .shape-fill {
+  fill: #FFFEFE;
+}
+
+
+.curve::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  background-color: var(--grey-700);
+}
+
+.curve::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: var(--white);
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
 .founder {
-  margin-top: 20rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
