@@ -259,6 +259,7 @@ ul {
   display: flex;
   justify-content: space-evenly;
   background-image: url('assets/soutiens/fond Ligue LHA.jpg');
+  background-repeat: no-repeat;
   padding: 40px;
 }
 
