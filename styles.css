@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
-
 /* ! ========================ROOTING======================= */
 
 html {
@@ -15,17 +14,6 @@ html {
 
 :root {
   /* ! COLORS */
-
-  /* ? PRIMARY  */
-  --primary-100: #d3d8e4;
-  --primary-200: #a8b1c9;
-  --primary-300: #7c8aae;
-  --primary-400: #516393;
-  --primary-500: #253c78;
-  --primary-600: #1e3060;
-  --primary-700: #162448;
-  --primary-800: #0f1830;
-  --primary-900: #070c18;
 
   /* ? GREY */
   --grey-50: #f9fafb;
@@ -125,11 +113,13 @@ small,
 
 a {
   text-decoration: none;
+  color: var(--textColor);
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .img {
@@ -260,7 +250,7 @@ ul {
 .title-underline {
   width: 7rem;
   height: 0.25rem;
-  background: var(--primary-500);
+  background: var(--primary-purple);
   margin: 0 auto;
 }
 
