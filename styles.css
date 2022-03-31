@@ -291,6 +291,7 @@ ul {
 
 .wave {
   position: relative;
+  border-top: 2px solid var(--white);
 }
 
 .curve {
@@ -301,6 +302,7 @@ ul {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+
 }
 
 .curve svg {
@@ -309,34 +311,11 @@ ul {
   width: calc(225% + 1.3px);
   height: 64px;
   transform: rotateY(180deg);
+  
 }
 
 .curve .shape-fill {
-  fill: #FFFEFE;
-}
-
-
-.curve::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  transform: translate(85%, 60%);
-  background-color: var(--grey-700);
-}
-
-.curve::after {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  background-color: var(--white);
-  transform: translate(-4%, 40%);
-  z-index: -1;
+  fill: var(--white);
 }
 
 .founder {
@@ -370,6 +349,7 @@ ul {
   border: transparent;
   border-radius: var(--border-radius);
   padding: 0.375rem 0.75rem;
+  margin-left: 100px ;
   letter-spacing: var(--letter-spacing);
   text-transform: capitalize;
   box-shadow: none;
