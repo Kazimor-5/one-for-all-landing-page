@@ -253,3 +253,123 @@ ul {
   background: var(--primary-500);
   margin: 0 auto;
 }
+
+/* ! COMMUNAUTE */
+
+.section-communaute {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  row-gap: 1rem;
+  padding: 0.75rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.communaute-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-purple);
+}
+
+.purple {
+  color: var(--primary-purple);
+  font-weight: 500;
+}
+
+.social-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primary-purple);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  color: var(--white);
+}
+
+.social-links-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-purple);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  color: var(--white);
+}
+
+.social-links-content p {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing);
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.75rem;
+}
+
+.social-btn {
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  background-color: var(--black);
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.social-btn:hover {
+  color: var(--black);
+  background: var(--white);
+}
+
+.communaute-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.cell {
+  box-shadow: var(--shadow-2);
+}
+
+.cell-1 {
+  transform: rotate(-2deg);
+}
+
+.cell-2 {
+  transform: rotate(5deg);
+}
+
+.cell-3 {
+  transform: rotate(3deg);
+}
+
+.cell-4 {
+  transform: rotate(-4deg);
+}
+
+.cell:hover {
+  box-shadow: var(--shadow-4);
+}
+
+@media screen and (min-width: 1024px) {
+  .section-communaute {
+    padding: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1.25rem;
+  }
+
+  .cell {
+    width: 70%;
+  }
+}
