@@ -250,7 +250,7 @@ ul {
 .title-underline {
   width: 7rem;
   height: 0.25rem;
-  background: var(--primary-500);
+  background: var(--primary-purple);
   margin: 0 auto;
 }
 
@@ -258,23 +258,32 @@ ul {
 /* ! PHILOSOPHIE */
 
 .section-philosophie {
-  margin-top: 1rem;
   min-height: 100vh;
-  position: relative;
-  padding: 1.5rem 0;
   overflow: hidden;
 }
 
-.separation {
-  height: 0.7rem;
-  background: var(--black);
+.article-title {
+  z-index: 1;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  padding: 1rem;
+}
+
+.philo-img-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/philosophie/bg-yellow.png");
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
 }
 
 .gandhi {
   width: 50%;
   min-width: 320px;
   position: absolute;
-  top: 2%;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -307,7 +316,7 @@ ul {
 .content .btn {
   cursor: pointer;
   background: var(--white);
-  color: var(grey-700);
+  color: var(--grey-700);
   border: transparent;
   border-radius: var(--border-radius);
   padding: 0.375rem 0.75rem;
@@ -315,7 +324,7 @@ ul {
   text-transform: capitalize;
   box-shadow: none;
   transition-property: none;
-  display: inline-block;
+  align-self: start;
 }
 
 
@@ -339,6 +348,10 @@ ul {
 /* ! MEDIAQUERIES */
 
 @media screen and (min-width: 1024px) {
+  .article-title {
+    align-self: flex-start;
+  }
+
   .img-container {
     display: block;
   }
@@ -349,6 +362,12 @@ ul {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
+
+  .article-title {
+    width: 50%;
+    height: 50%;
+  }
+
 }
 
 @media screen and (max-width: 425px) {
