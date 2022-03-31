@@ -250,6 +250,42 @@ ul {
 .title-underline {
   width: 7rem;
   height: 0.25rem;
-  background: var(--primary-500);
+  background: var(--primary-purple);
   margin: 0 auto;
+}
+
+/* ! REVOLUTION */
+
+.section-revolution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  padding: 1rem;
+}
+
+.top-container {
+  padding: 1rem;
+}
+
+.purple {
+  color: var(--primary-purple);
+  font-weight: 500;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1024px) {
+  .top-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    column-gap: 1.5rem;
+  }
 }
