@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400');
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
 /* ! ========================ROOTING======================= */
@@ -14,6 +18,17 @@ html {
 
 :root {
   /* ! COLORS */
+
+  /* ? PRIMARY  */
+  --primary-100: #d3d8e4;
+  --primary-200: #a8b1c9;
+  --primary-300: #7c8aae;
+  --primary-400: #516393;
+  --primary-500: #253c78;
+  --primary-600: #1e3060;
+  --primary-700: #162448;
+  --primary-800: #0f1830;
+  --primary-900: #070c18;
 
   /* ? GREY */
   --grey-50: #f9fafb;
@@ -119,7 +134,6 @@ a {
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .img {
@@ -132,7 +146,7 @@ ul {
 
 .btn {
   cursor: pointer;
-  background: var(--primary-purple);
+  background: var(--primary-500);
   color: var(--white);
   border: transparent;
   border-radius: var(--border-radius);
@@ -145,7 +159,7 @@ ul {
 }
 
 .btn:hover {
-  background: var(--secondary-purple);
+  background: var(--primary-700);
   box-shadow: var(--shadow-3);
 }
 
@@ -250,6 +264,110 @@ ul {
 .title-underline {
   width: 7rem;
   height: 0.25rem;
-  background: var(--primary-purple);
+  background: var(--primary-500);
   margin: 0 auto;
 }
+
+.movement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.domains {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-more {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.history {
+  background-color: rgb(255, 243, 219);
+  padding: 15px;
+  padding-top: 35px;
+}
+
+.samurai {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.img-samurai {
+  background-image: url('assets/histoire/parchemin1000x1000.jpg');
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: #ce212794 5px 5px, #ce212770 10px 10px, #ce212742 15px 15px, #ce212734 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px
+}
+
+.text-samurai {
+  background-color: rgb(255, 243, 219);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.paint {
+  font-family: 'Finger Paint', 'Montserrat', sans-serif;
+  color: #ce2127;
+}
+
+.hope {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.img-hope {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-hope>img {
+  width: 65%;
+}
+
+.text-hope {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(255, 243, 219);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.btn-discover {
+background: var(--red-dark);
+color: var(--white);
+border: 1px solid var(--red-dark);
+border-radius: var(--border-radius);
+padding: 0.375rem 0.75rem;
+letter-spacing: var(--letter-spacing);
+text-transform: capitalize;
+box-shadow: var(--shadow-1);
+transition: var(--transition);
+display: inline-block;
+}
+
+.btn-discover:hover {
+background: var(--white);
+color: var(--red-dark);
+}
+
