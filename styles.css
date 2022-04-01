@@ -268,6 +268,12 @@ ul {
   margin: 0 auto;
 }
 
+/* ! HISTOIRE */
+
+.histoire-title {
+  margin-bottom: 1rem;
+}
+
 .movement {
   display: flex;
   align-items: center;
@@ -296,13 +302,18 @@ ul {
   background-color: rgb(255, 243, 219);
   padding: 15px;
   padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .samurai {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 50px;
+  row-gap: 2rem;
 }
 
 .img-samurai {
@@ -311,14 +322,17 @@ ul {
   align-items: center;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: #ce212794 5px 5px, #ce212770 10px 10px, #ce212742 15px 15px, #ce212734 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px
+  box-shadow: #ce212794 5px 5px, #ce212770 10px 10px, #ce212742 15px 15px,
+    #ce212734 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .text-samurai {
   background-color: rgb(255, 243, 219);
   padding: 15px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .paint {
@@ -328,6 +342,7 @@ ul {
 
 .hope {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   margin-top: 50px;
 }
@@ -338,10 +353,6 @@ ul {
   align-items: center;
 }
 
-.img-hope>img {
-  width: 65%;
-}
-
 .text-hope {
   display: flex;
   flex-direction: column;
@@ -350,24 +361,49 @@ ul {
   background-color: rgb(255, 243, 219);
   padding: 15px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.samurai,
+.hope {
+  max-width: 425px;
 }
 
 .btn-discover {
-background: var(--red-dark);
-color: var(--white);
-border: 1px solid var(--red-dark);
-border-radius: var(--border-radius);
-padding: 0.375rem 0.75rem;
-letter-spacing: var(--letter-spacing);
-text-transform: capitalize;
-box-shadow: var(--shadow-1);
-transition: var(--transition);
-display: inline-block;
+  background: var(--red-dark);
+  color: var(--white);
+  border: 1px solid var(--red-dark);
+  border-radius: var(--border-radius);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  display: inline-block;
 }
 
 .btn-discover:hover {
-background: var(--white);
-color: var(--red-dark);
+  background: var(--white);
+  color: var(--red-dark);
 }
 
+/* ! MEDIAQUERIE */
+
+@media screen and (min-width: 1024px) {
+  .samurai,
+  .hope {
+    width: 100%;
+    max-width: none;
+    flex-direction: row;
+  }
+
+  .hope {
+    column-gap: 1.5rem;
+  }
+
+  .img-hope {
+    width: 50%;
+  }
+}
