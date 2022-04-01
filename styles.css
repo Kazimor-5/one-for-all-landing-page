@@ -280,8 +280,8 @@ ul {
 }
 
 .gandhi {
-  max-width: 580px;
-  height: 650px;
+  max-width: 620px;
+  height: 750px;
   min-width: 320px;
   position: absolute;
   top: 0;
@@ -356,13 +356,6 @@ ul {
 
 /* ! MEDIAQUERIES */
 
-@media (min-width:2100px){
-  .shapedividers_com-562::before{
-  background-size: 309% calc(2vw + 164px);
-  }
-}
-
-
 @media screen and (min-width: 1024px) {
   .article-title {
     align-self: flex-start;
@@ -397,6 +390,17 @@ ul {
 }
 
 @media screen and (max-width: 375px) {
+  /* .article-title {
+    top: 2%;
+    left: 2%;
+    padding: 1rem;
+    font-size: 1em;
+  } */
+  h3 {
+    font-size: 1em;
+
+  }
+  
   .gandhi {
     left: 0;
   }
