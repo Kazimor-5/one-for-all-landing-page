@@ -256,121 +256,172 @@ ul {
 
 /* ! NEWS */
 
-.section-news {
-  padding: 0.75rem;
-  min-height: 100vh;
+.containerFeed{
+  background-color: #eef1f8;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.news-grid {
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 1.5rem 0 0 0;
-  row-gap: 2rem;
+.containerFeed h2{
+  width: 100%;
+  text-align: center;
+  color: #6a55ea;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 50px;
 }
 
-.cell {
-  height: 100%;
+.feedSocial{
+  
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--white);
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-2);
+  justify-content: space-evenly;
 }
 
-.cell:hover {
-  box-shadow: var(--shadow-4);
+.feedSocial *{
+  box-sizing: content-box;
 }
 
-.cell-img-container,
-.cell-img-container > .img {
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+.feedSocial .containerCards{
+  padding: 15px 10px;
 }
 
-.card-header {
-  display: flex;
-  justify-content: flex-end;
+.feedSocial .containerCards:nth-child(2){
+  margin-top: 50px;
+}
+
+.feedSocial .containerCards .card{
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
   position: relative;
-  margin-bottom: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.news-content,
-.social-icon {
-  padding: 0.5rem;
+.feedSocial .containerCards .card .img{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  transition: 0.4s ease-in;
 }
 
-.logo-img-container {
-  background: var(--black);
-  border-radius: var(--border-radius);
-  width: 30%;
-  padding: 0.5rem;
-  border: 3px solid var(--white);
-  position: absolute;
-  left: 0;
-  top: -50%;
+.feedSocial .containerCards .card:hover .img{
+  height: 60%;
 }
 
-.card-title > h5,
-p {
+.feedSocial .containerCards .card .img img{
+  height: 100%;
+  width: auto;
+}
+
+.feedSocial .containerCards .card .containerText{
+  padding: 15px;
+}
+
+.feedSocial .containerCards .card .containerText .header{
+  display: flex;
+  align-items: center;
+}
+
+.feedSocial .containerCards .card .containerText .header img{
+  width: 60px;
+  height: 60px;
+  height: auto;
+  border: 4px solid white;
+  border-radius: 20px;
+  margin-top: -40px;
+  background-color: black;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.feedSocial .containerCards .card .containerText .header{
+  margin-bottom: 20px;
+  line-height: 15px;
+}
+
+.feedSocial .containerCards .card .containerText .header .title h3{
+  font-size: 14px;
+  font-family: var(--bodyFont);
+  text-align: left;
+  font-weight: 700;
+  color: #1e3650;
   margin: 0;
 }
 
-.card-title {
-  width: 65%;
+.feedSocial .containerCards .card .containerText .header .title p{
+  font-size: 12px;
+  color: rgb(94, 94, 94);
+  text-align: left;
+  margin: 0;
 }
 
-.social-icon {
-  align-self: flex-start;
-}
-
-.icon {
-  padding: 0.5rem;
-  font-size: 1.5rem;
+.feedSocial .containerCards .card .containerText i{
+  font-size: 30px;
+  color: white;
+  border-radius: 100%;
+  transition: 0.4s;
   background-color: #1d3452;
-  color: var(--white);
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 15px;
 }
 
-.purple > a {
-  color: var(--primary-purple);
+.feedSocial .containerCards .card .containerText .description{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.feedSocial .containerCards .card .containerText .description a{
+  font-size: 14px;
+  font-weight: 600;
+  color: #6a55ea;
+  background-color: transparent;
+  border: none;
+  padding: none;
+  transition: 0.3s;
+}
+
+.feedSocial .containerCards .card .containerText .description a:hover{
   font-weight: 700;
+  transition: 0.3s;
 }
 
-.italic {
-  font-style: italic;
-  font-weight: 700;
-}
+@media only screen and (max-width: 1300px) {
+  .feedSocial{
+    flex-direction: column;
+    align-items: center;
+  }
 
-.cell-1,
-.cell-4 {
-  background-color: #ffe4e1;
-}
+  .feedSocial .containerCards{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 50px;
+  }
 
-.cell-2,
-.cell-6 {
-  background-color: #edf2ff;
-}
+  .feedSocial .containerCards .card{
+    margin-bottom: 30px;
+    height: 600px;
+  }
 
-.cell-3,
-.cell-5 {
-  background-color: #f0e5fe;
-}
-
-/* ! MEDIAQUERIES */
-
-@media screen and (min-width: 768px) {
-  .news-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    align-items: flex-start;
-    justify-items: center;
+  .feedSocial .containerCards:nth-child(2){
+    margin-top: 0;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .news-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media only screen and (max-width: 600px) {
+  .containerFeed h2{
+    font-size: 6vw;
   }
 }
+
