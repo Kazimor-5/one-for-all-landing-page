@@ -368,39 +368,6 @@ ul {
 
 /* ! MEDIAQUERIES */
 
-@media screen and (min-width: 768px) {
-
-
-
-
-/*
-  .founder-img-container {
-    padding: 0;
-    height: 305px;
-  }
-
-  .founder-img {
-    height: 290px;
-  }
-
-  .content {
-    align-items: center;
-    font-size: 0.8rem;
-    margin: 0.5%;
-  }
-
-  .content p {
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
-    max-width: 25em;
-  }
-
-  .content .btn {
-  align-self: center ;
-  padding: 0.6rem 1.4rem;
-  margin-top: 0;
-  } */
-}
 
 @media screen and (max-width: 768px) {
   .article-title {
