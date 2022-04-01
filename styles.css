@@ -261,103 +261,41 @@ ul {
   margin: 0 auto;
 }
 
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-  margin: auto
-}
+/* ! JE-SUIS-ONE-FOR-ALL */
 
-.mySlides {
-  display: none;
-  width: 100%;
-height: auto;
-   
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  z-index: 999;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #ffffff;
-  
-  font-size: 60px;
-  transition: .6s ease;
-  border-radius: 0 3px 3px 0
-}
-
-.next {
-  left: 96%;
-  border-radius: 3px 3px 3px 3px
-}
-
-.prev {
-  
-  border-radius: 3px 3px 3px 3px
-}
-
-.prev:hover,
-.next:hover {
-  color: #f2f2f2;
-  background-color: rgba(0, 0, 0, 0.8)
-}
-
-.boutton {
-  z-index: 9999;
- position: absolute;
- margin-left: 60%;
- margin-top: -100px;
-  width: 30%;
-  cursor: pointer;
- 
-}
-
-.boutton a {
-  color: #ffffff;
-  padding: 20px 40px 20px 40px; 
- 
-  top: 0;
-  text-align: center;
-  background-color: rgb(119, 0, 255);; 
-  border-radius: 10px;
-}
-.challenge_text_boutton h4{
-  color: rgb(119, 0, 255); 
-  font-weight:800;
+.challenge_text_boutton h4 {
+  color: rgb(119, 0, 255);
+  font-weight: 800;
   font-family: 'Libre Baskerville', serif;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
-.challenge_titre{
+
+.challenge_titre {
   grid-column: 1;
   margin-left: 10px;
- 
 }
-.challenge_titre hr{
+
+.challenge_titre hr {
   margin-top: -10px;
   width: 250px;
   background-color: rgb(119, 0, 255);
   border: 2px solid rgb(119, 0, 255);
   size: 100px;
- float: left;
+  float: left;
 }
-.challenge{
+
+.challenge {
   margin-top: 50px;
   display: grid;
 }
 
-.challenge_text_boutton{
+.challenge_text_boutton {
   grid-column: 4;
   margin-top: 100px;
   display: grid;
 }
 
 .boutton_challenge {
-
   display: block;
   margin: auto;
   width: 70%;
@@ -370,51 +308,47 @@ height: auto;
 
   padding: 10px 20px 10px 20px;
   text-align: center;
-  background-color: rgb(119, 0, 255);; 
-  border-radius: 10px;margin-top: 50px;
+  background-color: rgb(119, 0, 255);
+  border-radius: 10px;
+  margin-top: 50px;
 }
-.challenge_text .special{
+.challenge_text .special {
   font-weight: 800;
   font-family: 'Libre Baskerville', serif;
   color: black;
   font-style: normal;
 }
 
-.challenge_text span{
+.challenge_text span {
   text-transform: capitalize;
   font-style: italic;
   font-family: 'Rock Salt', cursive;
   color: rgba(0, 0, 0, 0.616);
   font-weight: bold;
 }
-@media only screen and  (max-device-width : 680px) {
-  .boutton a{
-    width: 50%;
-    padding: 5px; 
 
+@media only screen and (max-device-width: 680px) {
+  .boutton a {
+    width: 50%;
+    padding: 5px;
   }
   .boutton_challenge a {
     width: 50%;
-    padding: 5px; 
-
+    padding: 5px;
   }
   .boutton_challenge {
-    
-     width: 30%;
-     cursor: pointer;
-     font-size: small;
-  
-     
-   }
+    width: 30%;
+    cursor: pointer;
+    font-size: small;
+  }
   .boutton {
-   position: absolute;
+    position: absolute;
     width: 30%;
     cursor: pointer;
     font-size: small;
     margin-top: -50px;
-    
   }
-  
+
   .prev,
   .next {
     cursor: pointer;
@@ -424,13 +358,12 @@ height: auto;
     margin-top: -22px;
     padding: 16px;
     color: #ffffff;
-    
+
     font-size: 20px;
-    transition: .6s ease;
-    border-radius: 0 3px 3px 0
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
   }
   .next {
     left: 87%;
-    
   }
 }
