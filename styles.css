@@ -250,7 +250,7 @@ ul {
 .title-underline {
   width: 7rem;
   height: 0.25rem;
-  background: var(--primary-500);
+  background: var(--primary-purple);
   margin: 0 auto;
 }
 
