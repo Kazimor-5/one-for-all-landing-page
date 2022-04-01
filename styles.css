@@ -146,7 +146,7 @@ ul {
 
 .btn {
   cursor: pointer;
-  background: var(--primary-500);
+  background: var(--primary-purple);
   color: var(--white);
   border: transparent;
   border-radius: var(--border-radius);
@@ -264,21 +264,123 @@ ul {
 .title-underline {
   width: 7rem;
   height: 0.25rem;
-  background: var(--primary-500);
+  background: var(--primary-purple);
   margin: 0 auto;
 }
+
+/* MOUVEMENT */
 
 .movement {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text>p {
+  font-size: 0.65rem;
+  text-align: center;
+  padding: 5px;
+}
+
+.img-fleur>img {
+  width: 200px;
+}
+
+.domains>img {
+  width: 200px;
 }
 
 .domains {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+}
+
+.domains>h3 {
+  font-size: 0.75rem;
+  margin: unset;
+  padding: 5px;
+}
+
+.more>h5 {
+  font-size: 0.75rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
+
+.button-movement:hover{
+  background: white;
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+}
+
+.title-movement-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.title-movement {
+  font-size: 1.05rem;
+  padding-top: 0.5rem;
+  margin : 0;
+}
+
+.title-movement::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 94%;
+  height: 2px;
+  background-color: var(--primary-purple);
+  transition: transform 0.25s ease-out;
+}
+
+.title-movement-container .title-movement::after {
+  bottom: 0;
+  left: 3%;
+  transform-origin: bottom right;
+  transform: scale(0);
+}
+
+.title-movement-container .title-movement:hover::after, .title-movement:focus::after {
+  transform-origin: bottom left;
+  transform: scale(1);
+}
+
+/* RESPONSIVE */
+
+  /* Smartphones */
+@media screen and (min-width: 768px) {
+
+.movement {
+  flex-direction: row;
+}
+
+.title-movement {
+  font-size: 2rem;
+}
+
+.title-movement::after {
+  left: 0;
+  width: 76%;
+  height: 3px;
+}
+
+.title-movement-container .title-movement::after {
+  left: 12%;
 }
 
 .more {
@@ -287,87 +389,58 @@ ul {
   align-items: center;
 }
 
-.title-more {
-  margin-left: 200px;
-  margin-right: 200px;
+.more>h5 {
+  max-width: 700px;
 }
 
-.history {
-  background-color: rgb(255, 243, 219);
-  padding: 15px;
-  padding-top: 35px;
 }
 
-.samurai {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-bottom: 50px;
+  /* Moyens écrans */
+@media screen and (min-width: 1024px) {
+
+.img-fleur>img {
+  width: 400px;
 }
 
-.img-samurai {
-  background-image: url('assets/histoire/parchemin1000x1000.jpg');
-  display: flex;
-  align-items: center;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: #ce212794 5px 5px, #ce212770 10px 10px, #ce212742 15px 15px, #ce212734 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px
+.domains>img {
+  width: 400px;
 }
 
-.text-samurai {
-  background-color: rgb(255, 243, 219);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+.text>p {
+  font-size: 1rem;
 }
 
-.paint {
-  font-family: 'Finger Paint', 'Montserrat', sans-serif;
-  color: #ce2127;
+.domains>h3 {
+  font-size: 1rem;
 }
 
-.hope {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
+.more>h5 {
+  font-size: 1rem;
 }
 
-.img-hope {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.title-movement::after {
+  left: 0;
+  width: 56%;
+  height: 3px;
 }
 
-.img-hope>img {
-  width: 65%;
+.title-movement-container .title-movement::after {
+  left: 22%;
 }
 
-.text-hope {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: rgb(255, 243, 219);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
-.btn-discover {
-background: var(--red-dark);
-color: var(--white);
-border: 1px solid var(--red-dark);
-border-radius: var(--border-radius);
-padding: 0.375rem 0.75rem;
-letter-spacing: var(--letter-spacing);
-text-transform: capitalize;
-box-shadow: var(--shadow-1);
-transition: var(--transition);
-display: inline-block;
+  /* Grands écrans */
+@media screen and (min-width: 1440px) {
+
+.title-movement::after {
+  left: 0;
+  width: 32%;
+  height: 3px;
 }
 
-.btn-discover:hover {
-background: var(--white);
-color: var(--red-dark);
+.title-movement-container .title-movement::after {
+  left: 34%;
 }
 
+}
