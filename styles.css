@@ -291,31 +291,8 @@ ul {
 
 .wave {
   position: relative;
-  border-top: 2px solid var(--white);
-}
-
-.curve {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
   transform: rotate(180deg);
 
-}
-
-.curve svg {
-  position: relative;
-  display: block;
-  width: calc(225% + 1.3px);
-  height: 64px;
-  transform: rotateY(180deg);
-  
-}
-
-.curve .shape-fill {
-  fill: var(--white);
 }
 
 .founder {
@@ -376,6 +353,13 @@ ul {
 
 
 /* ! MEDIAQUERIES */
+
+@media (min-width:2100px){
+  .shapedividers_com-562::before{
+  background-size: 309% calc(2vw + 164px);
+  }
+}
+
 
 @media screen and (min-width: 1024px) {
   .article-title {
