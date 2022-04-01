@@ -253,3 +253,62 @@ ul {
   background: var(--primary-purple);
   margin: 0 auto;
 }
+
+/* ! EVENEMENT */
+
+.section-evenement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  background: url('./assets/evenement/shapes.png'),
+    linear-gradient(
+      130deg,
+      rgba(106, 85, 234, 1) 2%,
+      rgba(136, 119, 238, 1) 35%,
+      rgba(166, 153, 242, 1) 60%,
+      var(--white) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1rem;
+}
+
+.evenement-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 1rem;
+}
+
+#experience {
+  text-transform: uppercase;
+  color: var(--secondary-purple);
+  font-weight: 700;
+}
+
+.event-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* ! MEDIAQUERIE */
+
+@media screen and (min-width: 1024px) {
+  .section-evenement {
+    flex-direction: row;
+    column-gap: 1rem;
+    min-height: 60vh;
+  }
+
+  .evenement-img-container,
+  .evenement-content {
+    width: 50%;
+  }
+
+  .evenement-img-container {
+    align-self: flex-end;
+  }
+}
