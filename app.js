@@ -17,6 +17,8 @@ closeSidebarBtn.addEventListener('click', () => {
   navbar.style.boxShadow = 'var(--shadow-2)';
 });
 
+// ! SLIDER
+
 var slideIndex = 1;
 
 var myTimer;
