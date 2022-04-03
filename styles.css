@@ -379,3 +379,27 @@ a::after {
     display: block;
   }
 }
+/* HEADER  */
+
+.background {
+  background-image: url('/assets/header/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fleurColor {
+  width: 80%;
+}
+
+/* ! MEDIAQUERIE */
+
+@media screen and (min-width: 760px) {
+  .fleurColor {
+    width: 60%;
+  }
+}
