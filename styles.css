@@ -379,7 +379,7 @@ a::after {
     display: block;
   }
 }
-/* HEADER  */
+/* ! HEADER  */
 
 .background {
   background-image: url('/assets/header/header.jpg');
@@ -401,5 +401,100 @@ a::after {
 @media screen and (min-width: 760px) {
   .fleurColor {
     width: 60%;
+  }
+}
+
+/* ! HEADER-SLIDER */
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ffffff;
+
+  font-size: 60px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  left: 96%;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.prev {
+  border-radius: 3px 3px 3px 3px;
+}
+
+.prev:hover,
+.next:hover {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.boutton {
+  z-index: 9999;
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -100px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.boutton a {
+  color: #ffffff;
+  padding: 20px 40px 20px 40px;
+  top: 0;
+  text-align: center;
+  background-color: rgb(86, 10, 148);
+  border-radius: 10px;
+}
+
+@media only screen and (max-device-width: 680px) {
+  .boutton a {
+    width: 50%;
+    padding: 5px;
+  }
+  .boutton {
+    position: absolute;
+    width: 30%;
+    cursor: pointer;
+    font-size: small;
+    margin-top: -50px;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ffffff;
+
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  .next {
+    left: 87%;
   }
 }
