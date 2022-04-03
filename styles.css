@@ -796,6 +796,30 @@ ul {
   font-weight: 500;
 }
 
+/* ! REVOLUTION */
+.section-revolution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  padding: 1rem;
+}
+
+.top-container {
+  padding: 1rem;
+}
+
+.purple {
+  color: var(--primary-purple);
+  font-weight: 500;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 /* ! MEDIAQUERIES */
 
 @media screen and (max-width: 375px) {
@@ -1115,6 +1139,14 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    column-gap: 1.5rem;
+  }
+  /* REVOLUTION */
+  .top-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
     column-gap: 1.5rem;
   }
 }
