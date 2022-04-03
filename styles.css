@@ -1456,6 +1456,194 @@ ul {
   font-weight: 700;
 }
 
+/* footer */
+
+footer .containerFooter .cardFooter img {
+  max-height: 110px;
+  width: auto;
+  margin-left: 50px;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  padding-top: 200px;
+  margin-top: 200px;
+}
+
+footer h4 {
+  font-family: var(--bodyFont);
+}
+
+footer .containerFooter {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 220px;
+  margin-top: -200px;
+  background-color: var(--primary-950);
+  padding-right: 5%;
+}
+
+footer .cardFooter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+footer .cardFooter p {
+  color: var(--white);
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+footer .cardFooter h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #7b859e;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer .cardFooter a {
+  color: var(--white);
+  font-weight: 300;
+  transition: 0.2s;
+}
+
+footer .cardFooter.follow {
+  align-items: center;
+}
+
+footer .cardFooter.follow a {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+footer .cardFooter.follow a i {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+footer .cardFooter.follow a:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+footer .cardFooter.follow a:hover:before {
+  top: 0;
+}
+
+footer .cardFooter.follow a:nth-child(2):before {
+  background: #3b5999;
+}
+
+footer .cardFooter.follow a:nth-child(3):before {
+  background: linear-gradient(rgb(106, 10, 216), rgb(252, 192, 144));
+}
+
+footer .cardFooter.follow a:nth-child(4):before {
+  background: #bb3810;
+}
+
+footer .cardFooter.follow a:hover i {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+footer .cardFooter a:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+footer .containerForm {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+footer .containerContact {
+  height: 300px;
+  background-color: #f3effe;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 20px;
+  width: 25%;
+  min-width: 330px;
+}
+
+footer .containerContact.contact {
+  left: 10%;
+}
+
+footer .containerContact .containerText {
+  font-size: 22px;
+}
+
+footer .containerContact .containerText p {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+footer .containerContact .containerText p:nth-child(1) {
+  color: #9775e8;
+}
+
+footer .containerContact .containerText p:nth-child(2) {
+  color: #4b38a3;
+  margin-top: 0;
+}
+
+footer .containerContact .containerButton {
+  width: 100%;
+  margin-top: 0;
+}
+
+footer .containerContact .containerButton a {
+  background-color: #6a55ea;
+  color: white;
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 4px solid #6a55ea;
+  transition: 0.3s;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+footer .containerContact .containerButton a:hover {
+  border: 4px solid #192136;
+  background-color: transparent;
+  color: #192136;
+}
+
 /* ! MEDIAQUERIES */
 
 @media screen and (max-width: 375px) {
@@ -1853,7 +2041,7 @@ ul {
     width: 70%;
   }
 
-  /* ! JE SUIS ONE4ALL */
+  /* JE SUIS ONE4ALL */
   .boutton a {
     width: 50%;
     padding: 5px;
@@ -1930,6 +2118,36 @@ ul {
 
   .evenement-img-container {
     align-self: flex-end;
+  }
+
+  footer .containerFooter {
+    flex-wrap: wrap;
+    column-gap: 100px;
+    width: 100%;
+    padding-left: 5%;
+  }
+
+  footer .containerFooter .cardFooter {
+    margin-bottom: 40px;
+    max-width: 150px;
+  }
+
+  footer .cardFooter h4 {
+    margin-bottom: 10px;
+  }
+
+  footer .cardFooter p {
+    margin: 0;
+  }
+
+  footer .containerFooter .cardFooter img {
+    width: 60%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  footer .cardFooter {
+    align-items: center;
   }
 }
 
