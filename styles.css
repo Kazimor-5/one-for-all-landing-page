@@ -306,7 +306,6 @@ ul {
 
 .slideshow-container {
   width: 100%;
-  height: 770px;
   position: relative;
   overflow: hidden;
 }
@@ -397,6 +396,7 @@ ul {
   font-family: var(--bodyFont);
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .more > h5 {
@@ -492,14 +492,13 @@ ul {
 }
 
 /* ! PHILOSOPHIE */
-/* .section-philosophie {
+.section-philosophie {
   min-height: 100vh;
   overflow: hidden;
 }
 
 .article-title {
   z-index: 1;
-  position: absolute;
   top: 2%;
   left: 2%;
   padding: 1rem;
@@ -516,72 +515,67 @@ ul {
 }
 
 .gandhi {
-  min-width: 320px;
-  max-width: 620px;
   width: 100%;
-  height: 820px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  
 }
 .gandhi img {
-  height: 758px;
+  width: 80%;
+  height: auto;
+  max-width: 800px;
 }
 
 .wave {
   position: relative;
   transform: rotate(180deg);
+  margin-top: 200px;
+}
+
+.wave svg {
+  fill: #51647e;
 }
 
 .founder {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  background: var(--blue);
-  padding: 1rem;
-  background-color: var(--grey-700);
-  object-position: center;
-  grid-template-rows: 490px;
+  display: flex;
+  background-color: #51647e;
+  justify-content: space-around;
+  padding-bottom: 50px;
 }
 
 .founder-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0 0 18rem;
-  height: 480px;
+  width: 40%;
 }
 
 .founder-img-container img {
-  height: 480px;
+  height: auto;
   width: 100%;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
   color: var(--white);
   font-size: 19px;
-  margin: 6% 31% 6% 6%;
-} */
+  width: 40%;
+}
 
-/* .content .btn {
-  cursor: pointer;
-  background: var(--white);
-  color: var(--grey-700);
-  border: transparent;
-  border-radius: var(--border-radius);
-  padding: 0.675rem 1.5rem;
-  margin-top: auto;
-  letter-spacing: var(--letter-spacing);
-  text-transform: capitalize;
-  box-shadow: none;
-  transition-property: none;
-  align-self: start;
-} */
+.founder .content button{
+  background-color: white;
+  border: solid 3px white;
+  color: #51647e;
+  transition: 0.3s;
+
+}
+
+.founder .content button:hover{
+  background-color: transparent;
+  color: white;
+}
 
 .name,
 .devise,
@@ -1715,6 +1709,12 @@ footer .containerContact .containerButton a:hover {
   /* NAV */
   .nav-links {
     width: 30%;
+    min-height: 80px;
+    display: flex;
+  }
+
+  .navbar{
+    min-height: 80px;
   }
   /* HEADER */
   .background {
@@ -2116,6 +2116,47 @@ footer .containerContact .containerButton a:hover {
 
   footer .cardFooter {
     align-items: center;
+  }
+
+  .challenge_text_boutton{
+    flex-direction: column;
+  }
+
+  .challenge .containerImg{
+    display: flex;
+    justify-content: center;
+  }
+
+  .challenge .containerText{
+    width: 100%;
+  }
+
+  .challenge .containerText .challenge_text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .challenge .containerText p{
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .challenge .containerImg img{
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .founder{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .founder .founder-img-container, .founder .founder-img-container img, .founder .content{
+    width: 80%;
   }
 }
 
