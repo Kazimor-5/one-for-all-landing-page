@@ -254,7 +254,11 @@ ul {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* ! MOUVEMENT */
+=======
+/* MOUVEMENT */
+>>>>>>> 21cc68b6b5a4a412562c414c553dc0246319bfc7
 
 .movement {
   display: flex;
