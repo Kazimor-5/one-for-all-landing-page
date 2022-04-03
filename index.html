@@ -4,12 +4,138 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo/logocolor.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./styles.css" />
-    <script defer="./app.js"></script>
+    <script src="./app.js" defer></script>
     <title>#One4All</title>
   </head>
   <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <button class="open-sidebar-btn"><i class="fas fa-bars"></i> menu</button>
+      <ul class="nav-links">
+        <li>
+          <button class="close-sidebar-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-anchor" href="#"> présentation </a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-anchor" href="#"> philosophie </a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-anchor" href="#"> révolution </a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-anchor" href="#"> commerce </a>
+        </li>
+        <li class="img-container">
+          <img src="./assets/logo/logocolor.png" alt="" class="img" />
+        </li>
+        <li class="nav-btn">
+          <a class="nav-anchor" href="#"> évènements </a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-anchor" href="#">nos soutiens</a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-anchor" href="#"> rejoignez-nous </a>
+        </li>
+        <li class="nav-btn">
+          <a class="nav-anchor" href="#" class="btn adherer">
+            <i class="fa-solid fa-heart" id="icon"></i> adhérer
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- fin navbar -->
+    <!-- header -->
+    <header class="background">
+      <article class="fleurColor">
+        <img
+          class="img"
+          src="/assets/logo/logo-fleur-texte.png"
+          alt="logocolor"
+        />
+      </article>
+      <!-- fin header -->
+    </header>
+    <!-- header-slider -->
+    <section class="slideshow-container">
+      <article class="mySlides">
+        <img
+          src="./assets/Slide Header/Slide Animalier/Slide-baleine.jpg"
+          class="img"
+          alt="photo baleine"
+        />
+        <div class="boutton">
+          <a href=""> En Savoir Plus</a>
+        </div>
+      </article>
+      <article class="mySlides">
+        <img
+          src="./assets/Slide Header/Slide Environnement/SLIDE-environnement.jpg"
+          class="img"
+          alt="photo lac"
+        />
+        <div class="boutton">
+          <a href=""> En Savoir Plus</a>
+        </div>
+      </article>
+      <article class="mySlides">
+        <img
+          src="./assets/Slide Header/Slide Humanitaire/SLIDE-humanitaire.jpg"
+          class="img"
+          alt="photo deux bras"
+        />
+        <div class="boutton">
+          <a href=""> En Savoir Plus</a>
+        </div>
+      </article>
+      <article class="mySlides">
+        <img
+          src="./assets/Slide Header/Slide Ligue/Slide-Ligue.jpg"
+          class="img"
+          alt="pelican"
+        />
+        <div class="boutton">
+          <a href=""> En Savoir Plus</a>
+        </div>
+      </article>
+      <article class="mySlides">
+        <img
+          src="./assets/Slide Header/Slide Notre Philosophie/Slide-MARTIN-LK.jpg"
+          class="img"
+          alt="photo martin"
+        />
+        <div class="boutton">
+          <a href=""> En Savoir Plus</a>
+        </div>
+      </article>
+      <article class="mySlides">
+        <img
+          src="./assets/Slide Header/Slide Notre Réseau/Slide-Notre-réseau.jpg"
+          class="img"
+          alt="photo reseau"
+        />
+        <div class="boutton">
+          <a href=""> En Savoir Plus</a>
+        </div>
+      </article>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <!-- fin header-slider -->
     <!-- LE MOUVEMENT ALTRUISTE -->
 
     <!--Titre-->
