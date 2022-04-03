@@ -253,3 +253,175 @@ ul {
   background: var(--primary-500);
   margin: 0 auto;
 }
+
+/* MOUVEMENT */
+
+.movement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text > p {
+  font-size: 0.65rem;
+  text-align: center;
+  padding: 5px;
+}
+
+.img-fleur > img {
+  width: 200px;
+}
+
+.domains > img {
+  width: 200px;
+}
+
+.domains {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.domains > h3 {
+  font-size: 0.75rem;
+  margin: unset;
+  padding: 5px;
+}
+
+.more > h5 {
+  font-size: 0.75rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
+
+.button-movement:hover {
+  background: white;
+  color: var(--primary-purple);
+  border: 1px solid var(--primary-purple);
+}
+
+.title-movement-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.title-movement {
+  font-size: 1.05rem;
+  padding-top: 0.5rem;
+  margin: 0;
+}
+
+.title-movement::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 94%;
+  height: 2px;
+  background-color: var(--primary-purple);
+  transition: transform 0.25s ease-out;
+}
+
+.title-movement-container .title-movement::after {
+  bottom: 0;
+  left: 3%;
+  transform-origin: bottom right;
+  transform: scale(0);
+}
+
+.title-movement-container .title-movement:hover::after,
+.title-movement:focus::after {
+  transform-origin: bottom left;
+  transform: scale(1);
+}
+
+/* RESPONSIVE */
+
+/* Smartphones */
+@media screen and (min-width: 768px) {
+  .movement {
+    flex-direction: row;
+  }
+
+  .title-movement {
+    font-size: 2rem;
+  }
+
+  .title-movement::after {
+    left: 0;
+    width: 76%;
+    height: 3px;
+  }
+
+  .title-movement-container .title-movement::after {
+    left: 12%;
+  }
+
+  .more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .more > h5 {
+    max-width: 700px;
+  }
+}
+
+/* Moyens écrans */
+@media screen and (min-width: 1024px) {
+  .img-fleur > img {
+    width: 400px;
+  }
+
+  .domains > img {
+    width: 400px;
+  }
+
+  .text > p {
+    font-size: 1rem;
+  }
+
+  .domains > h3 {
+    font-size: 1rem;
+  }
+
+  .more > h5 {
+    font-size: 1rem;
+  }
+
+  .title-movement::after {
+    left: 0;
+    width: 56%;
+    height: 3px;
+  }
+
+  .title-movement-container .title-movement::after {
+    left: 22%;
+  }
+}
+
+/* Grands écrans */
+@media screen and (min-width: 1440px) {
+  .title-movement::after {
+    left: 0;
+    width: 32%;
+    height: 3px;
+  }
+
+  .title-movement-container .title-movement::after {
+    left: 34%;
+  }
+}
