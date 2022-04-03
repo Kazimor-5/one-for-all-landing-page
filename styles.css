@@ -1142,13 +1142,18 @@ ul {
 
 .challenge {
   margin-top: 50px;
-  display: grid;
+  margin-bottom: 50px;
+}
+
+.challenge .containerImg{
+  margin-top: 50px;
 }
 
 .challenge_text_boutton {
-  grid-column: 4;
-  margin-top: 100px;
-  display: grid;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .boutton_challenge {
@@ -1174,13 +1179,13 @@ ul {
 
 /* ! NEWS */
 
-.containerFeed {
+.containerFeed{
   background-color: #eef1f8;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.containerFeed h2 {
+.containerFeed h2{
   width: 100%;
   text-align: center;
   color: #6a55ea;
@@ -1189,73 +1194,72 @@ ul {
   margin-bottom: 50px;
 }
 
-.feedSocial {
+.feedSocial{
+  
   display: flex;
   justify-content: space-evenly;
 }
 
-.feedSocial * {
+.feedSocial *{
   box-sizing: content-box;
 }
 
-.feedSocial .containerCards {
+.feedSocial .containerCards{
   padding: 15px 10px;
 }
 
-.feedSocial .containerCards:nth-child(2) {
+.feedSocial .containerCards:nth-child(2){
   margin-top: 50px;
 }
 
-.feedSocial .containerCards .card {
+.feedSocial .containerCards .card{
   width: 350px;
   height: 500px;
   border-radius: 10px;
   margin-bottom: 10px;
   overflow: hidden;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
-    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
-    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.feedSocial .containerCards:nth-child(1) .card {
-  background-color: #ffe4e1;
+.feedSocial .containerCards:nth-child(1) .card{
+  background-color: #FFE4E1;
 }
 
-.feedSocial .containerCards:nth-child(2) .card {
-  background-color: #f0e5fe;
+.feedSocial .containerCards:nth-child(2) .card{
+  background-color: #F0E5FE;
 }
 
-.feedSocial .containerCards:nth-child(1) .card {
-  background-color: #edf2ff;
+.feedSocial .containerCards:nth-child(1) .card{
+  background-color: #EDF2FF;
 }
 
-.feedSocial .containerCards .card .img {
+.feedSocial .containerCards .card .img{
   height: 50%;
   display: flex;
   justify-content: center;
   transition: 0.4s ease-in;
 }
 
-.feedSocial .containerCards .card:hover .img {
+.feedSocial .containerCards .card:hover .img{
   height: 60%;
 }
 
-.feedSocial .containerCards .card .img img {
+.feedSocial .containerCards .card .img img{
   height: 100%;
   width: auto;
 }
 
-.feedSocial .containerCards .card .containerText {
+.feedSocial .containerCards .card .containerText{
   padding: 15px;
 }
 
-.feedSocial .containerCards .card .containerText .header {
+.feedSocial .containerCards .card .containerText .header{
   display: flex;
   align-items: center;
 }
 
-.feedSocial .containerCards .card .containerText .header img {
+.feedSocial .containerCards .card .containerText .header img{
   width: 60px;
   height: 60px;
   height: auto;
@@ -1267,12 +1271,12 @@ ul {
   margin-right: 10px;
 }
 
-.feedSocial .containerCards .card .containerText .header {
+.feedSocial .containerCards .card .containerText .header{
   margin-bottom: 20px;
   line-height: 15px;
 }
 
-.feedSocial .containerCards .card .containerText .header .title h3 {
+.feedSocial .containerCards .card .containerText .header .title h3{
   font-size: 14px;
   font-family: var(--bodyFont);
   text-align: left;
@@ -1281,14 +1285,14 @@ ul {
   margin: 0;
 }
 
-.feedSocial .containerCards .card .containerText .header .title p {
+.feedSocial .containerCards .card .containerText .header .title p{
   font-size: 12px;
   color: rgb(94, 94, 94);
   text-align: left;
   margin: 0;
 }
 
-.feedSocial .containerCards .card .containerText i {
+.feedSocial .containerCards .card .containerText i{
   font-size: 30px;
   color: white;
   border-radius: 100%;
@@ -1305,12 +1309,12 @@ ul {
   padding: 15px;
 }
 
-.feedSocial .containerCards .card .containerText .description {
+.feedSocial .containerCards .card .containerText .description{
   font-size: 14px;
   line-height: 16px;
 }
 
-.feedSocial .containerCards .card .containerText .description a {
+.feedSocial .containerCards .card .containerText .description a{
   font-size: 14px;
   font-weight: 600;
   color: #6a55ea;
@@ -1320,49 +1324,84 @@ ul {
   transition: 0.3s;
 }
 
-.feedSocial .containerCards .card .containerText .description a:hover {
+.feedSocial .containerCards .card .containerText .description a:hover{
   font-weight: 700;
   transition: 0.3s;
 }
 
 /* ! EVENEMENT */
 
-.section-evenement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  min-height: 100vh;
-  background: url('./assets/evenement/shapes.png'),
-    linear-gradient(
-      130deg,
-      rgba(106, 85, 234, 1) 2%,
-      rgba(136, 119, 238, 1) 35%,
-      rgba(166, 153, 242, 1) 60%,
-      var(--white) 100%
-    );
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 1rem;
+.events{
+  position: relative;
+  min-height: 80vh;
+  box-sizing: unset;
 }
 
-.evenement-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  row-gap: 1rem;
+.events *{
+  box-sizing: unset;
 }
 
-#experience {
-  text-transform: uppercase;
-  color: var(--secondary-purple);
-  font-weight: 700;
+.events .containerText{
+  padding: 100px 0 50px 100px;
+  width: 70%;
+  min-height: 80vh;
+  position: relative;
+  background: linear-gradient(to right bottom, #b6aaff 0%,#d3cbfd 10%, #eeeeee 100%);
 }
 
-.event-title {
+.events .containerText span{
+  color: #6a55ea;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.events .containerText h2{
+  font-size: 70px;
+  color: black;
+  width: 80%;
+}
+
+.events .containerText .containerIllustration2{
+  width: 60%;
+  margin-top: 50px;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.events .containerText .containerIllustration2 img{
+  width: 100%;
+  height: auto;
+}
+
+.events .containerIllustration{
+  width: 35%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.events .containerIllustration img{
+  height: 70vh;
+  width: auto;
+}
+
+.events .containerButton{
+  justify-content: flex-start;
+}
+
+.events .containerText .shape{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.events .btn{
+  margin-top: 50px;
 }
 
 /* ! FOOTER */
@@ -1390,7 +1429,7 @@ footer .containerFooter {
   width: 100%;
   padding-top: 220px;
   margin-top: -200px;
-  background-color: var(--primary-950);
+  background-color: #192136;
   padding-right: 5%;
 }
 
@@ -1958,76 +1997,8 @@ footer .containerContact .containerButton a:hover {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
   }
-  /*  NEWS */
-  .feedSocial {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .feedSocial .containerCards {
-    display: flex;
-    width: 90%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    column-gap: 50px;
-  }
-
-  .feedSocial .containerCards .card {
-    margin-bottom: 30px;
-    height: 600px;
-  }
-
-  .feedSocial .containerCards:nth-child(2) {
-    margin-top: 0;
-  }
-
-  /* EVENEMENTS */
-  .section-evenement {
-    flex-direction: row;
-    column-gap: 1rem;
-    min-height: 60vh;
-  }
-
-  .evenement-img-container,
-  .evenement-content {
-    width: 50%;
-  }
-
-  .evenement-img-container {
-    align-self: flex-end;
-  }
 
   /* FOOTER */
-
-  footer .containerFooter {
-    flex-wrap: wrap;
-    column-gap: 100px;
-    width: 100%;
-    padding-left: 5%;
-  }
-
-  footer .containerFooter .cardFooter {
-    margin-bottom: 40px;
-    max-width: 150px;
-  }
-
-  footer .cardFooter h4 {
-    margin-bottom: 10px;
-  }
-
-  footer .cardFooter p {
-    margin: 0;
-  }
-
-  footer .containerFooter .cardFooter img {
-    width: 60%;
-    height: auto;
-    margin-left: 0;
-  }
-
-  footer .cardFooter {
-    align-items: center;
-  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -2077,5 +2048,91 @@ footer .containerContact .containerButton a:hover {
   .section-reseau {
     justify-content: center;
     justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .feedSocial{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedSocial .containerCards{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 50px;
+  }
+
+  .feedSocial .containerCards .card{
+    margin-bottom: 30px;
+    height: 600px;
+  }
+
+  .feedSocial .containerCards:nth-child(2){
+    margin-top: 0;
+  }
+
+  .events .containerIllustration{
+    display: none;
+  }
+
+  .events .containerText{
+    width: 80%;
+    padding-bottom: 40px;
+    padding: 10vw;
+  }
+
+  .events .containerText h2{
+    font-size: 5.5vw;
+  }
+
+  footer .containerFooter {
+    flex-wrap: wrap;
+    column-gap: 100px;
+    width: 100%;
+    padding-left: 5%;
+  }
+
+  footer .containerFooter .cardFooter {
+    margin-bottom: 40px;
+    max-width: 150px;
+  }
+
+  footer .cardFooter h4 {
+    margin-bottom: 10px;
+  }
+
+  footer .cardFooter p {
+    margin: 0;
+  }
+
+  footer .containerFooter .cardFooter img {
+    width: 60%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  footer .cardFooter {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containerFeed h2{
+    font-size: 6vw;
+  }
+
+  .events .containerText p{
+    font-size: 3vw;
+  }
+
+  .events .containerText .containerIllustration2{
+    width: 100%;
+  }
+
+  .events .containerText .shape{
+    display: none;
   }
 }
