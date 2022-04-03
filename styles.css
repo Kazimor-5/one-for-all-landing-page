@@ -944,6 +944,130 @@ ul {
   transform: scale(1);
 } */
 
+/* ! RESEAU */
+
+.section-reseau {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-color: #fffeee;
+  height: 100%;
+  padding: 20px;
+}
+
+.reseau-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.planet {
+  display: flex;
+  justify-content: center;
+}
+
+.planet > img {
+  width: 300px;
+  height: 300px;
+  margin-top: 15px;
+}
+
+.titre-explain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titre-explain > h5 {
+  margin: unset;
+}
+
+.vertical-lign {
+  border-left: 2px solid white;
+  display: inline-block;
+  height: 70px;
+  margin: 5px;
+}
+
+.explain {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #218dbc 5%, #1a7196, #145571, #0d384b);
+  border-radius: 20px;
+  min-height: 60vh;
+  padding: 20px;
+}
+
+.losange {
+  height: 90px;
+  width: 90px;
+  rotate: 45deg;
+  border: 3px solid gray;
+  border-radius: 7px;
+  box-shadow: inset 5px -5px 10px -5px #d2d4d5;
+}
+
+.losange > .text-losange {
+  rotate: 315deg;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  left: 20px;
+  bottom: 35px;
+  width: 150px;
+}
+
+.text-losange > h4 {
+  margin-bottom: 0;
+}
+
+.container-losange {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  min-height: inherit;
+}
+
+.titre-explain > h5 {
+  color: white;
+}
+
+.text-losange > h4 {
+  color: white;
+}
+.text-losange > p {
+  color: white;
+}
+
+.text-losange > p {
+  margin: unset;
+}
+
+.button-reseau {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-reseau > a {
+  background: #0d384b;
+}
+
+.button-reseau > .btn:hover {
+  background: white;
+  color: #0d384b;
+  border: 1px solid #0d384b;
+  box-shadow: var(--shadow-3);
+}
+
+.paint-purple {
+  color: var(--primary-purple);
+  font-weight: bold;
+}
+
 /* ! MEDIAQUERIES */
 
 @media screen and (max-width: 375px) {
@@ -1202,6 +1326,11 @@ ul {
     padding: 0.6rem 1.4rem;
     margin-top: 0;
   }
+
+  /* RESEAU */
+  .reseau-content {
+    max-width: 550px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1281,6 +1410,29 @@ ul {
   .soutiens-vid {
     width: 60%;
   }
+
+  /* RESEAU */
+  .explain,
+  .container-losange,
+  .section-reseau {
+    flex-direction: row;
+  }
+
+  .reseau-content {
+    min-width: 70%;
+  }
+
+  .explain {
+    min-height: 20vh;
+  }
+
+  .button-reseau {
+    justify-content: end;
+  }
+
+  .section-reseau {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1314,5 +1466,20 @@ ul {
 
   .title-movement-container .title-movement::after {
     left: 34%;
+  }
+
+  /* RESEAU */
+  .planet > img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .reseau-content {
+    min-width: 50%;
+  }
+
+  .section-reseau {
+    justify-content: center;
+    justify-content: space-evenly;
   }
 }
