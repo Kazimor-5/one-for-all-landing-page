@@ -551,7 +551,226 @@ ul {
   color: var(--primary-purple);
 }
 
+/* ! PHILOSOPHIE */
+
+.section-philosophie {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.article-title {
+  z-index: 1;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  padding: 1rem;
+  align-self: flex-start;
+}
+
+.philo-img-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./assets/philosophie/bg-yellow.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gandhi {
+  min-width: 320px;
+  max-width: 620px;
+  width: 100%;
+  height: 820px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gandhi img {
+  height: 758px;
+}
+
+.wave {
+  position: relative;
+  transform: rotate(180deg);
+}
+
+.founder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  background: var(--blue);
+  padding: 1rem;
+  background-color: var(--grey-700);
+  object-position: center;
+  grid-template-rows: 490px;
+}
+
+.founder-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 18rem;
+  height: 480px;
+}
+
+.founder-img-container img {
+  height: 480px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--white);
+  font-size: 19px;
+  margin: 6% 31% 6% 6%;
+}
+
+.content .btn {
+  cursor: pointer;
+  background: var(--white);
+  color: var(--grey-700);
+  border: transparent;
+  border-radius: var(--border-radius);
+  padding: 0.675rem 1.5rem;
+  margin-top: auto;
+  letter-spacing: var(--letter-spacing);
+  text-transform: capitalize;
+  box-shadow: none;
+  transition-property: none;
+  align-self: start;
+}
+
+.name,
+.devise,
+.association,
+.values,
+.solidarity {
+  font-weight: 500;
+}
+
+.name,
+.devise {
+  font-style: italic;
+}
+
 /* ! MEDIAQUERIES */
+
+@media screen and (max-width: 375px) {
+  /* PHILOSOPHIE */
+
+  .article-title {
+    left: 15%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .philo-img-container {
+    background-position: center;
+    height: 600px;
+  }
+
+  .gandhi {
+    top: 110px;
+    width: 100%;
+    height: 420px;
+  }
+
+  .img {
+    width: 100%;
+    height: 420px;
+  }
+
+  svg {
+    height: 22px;
+  }
+
+  .founder {
+    object-position: center;
+    grid-template-rows: 260px;
+  }
+
+  .founder-img-container {
+    padding: 0;
+    height: 264px;
+  }
+
+  .founder-img {
+    height: 244px;
+  }
+
+  .content {
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 0.8%;
+  }
+
+  .content .btn {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* PHILOSOPHIE */
+
+  .article-title {
+    left: 18%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .philo-img-container {
+    background-position: center;
+    height: 600px;
+  }
+
+  .gandhi {
+    top: 110px;
+    width: 100%;
+    height: 420px;
+  }
+
+  .img {
+    width: 100%;
+    height: 420px;
+  }
+
+  svg {
+    height: 22px;
+  }
+
+  .founder {
+    object-position: center;
+    grid-template-rows: 300px;
+  }
+
+  .founder-img-container {
+    padding: 0;
+    height: 295px;
+  }
+
+  .founder-img {
+    height: 290px;
+  }
+
+  .content {
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 0 0.5%;
+  }
+
+  .content .btn {
+    align-self: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   /* NAV */
   .nav-links {
@@ -634,6 +853,67 @@ ul {
   .fonctionnement-content {
     margin-left: 3rem;
     width: 400px;
+  }
+
+  /* PHILOSOPHIE */
+  .article-title {
+    left: 6%;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  .philo-img-container {
+    background-position: center;
+    height: 740px;
+  }
+
+  .gandhi {
+    top: 60px;
+    width: 100%;
+    height: 610px;
+  }
+
+  .img {
+    width: 100%;
+    height: 610px;
+  }
+
+  svg {
+    height: 22px;
+  }
+
+  .founder {
+    object-position: center;
+    grid-template-rows: 340px;
+  }
+
+  .founder-img-container {
+    padding: 0;
+    height: 305px;
+  }
+
+  .founder-img {
+    height: 290px;
+  }
+
+  .content {
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 0.5%;
+  }
+
+  .content p {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    max-width: 25em;
+  }
+
+  .content .btn {
+    align-self: center;
+    padding: 0.6rem 1.4rem;
+    margin-top: 0;
   }
 }
 
