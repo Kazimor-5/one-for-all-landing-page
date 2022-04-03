@@ -820,6 +820,130 @@ ul {
   align-items: center;
   justify-content: space-around;
 }
+
+/* ! SOUTIENS */
+
+.soutiens {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url('assets/soutiens/fond Ligue LHA.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.75rem;
+}
+
+.soutiens-vid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.soutiens-vid > iframe {
+  margin-top: 1.1rem;
+}
+
+.soutiens-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-soutiens-more {
+  display: flex;
+  justify-content: center;
+}
+
+.soutiens-more > .text-soutiens-more > p {
+  text-align: center;
+  background: #000000af;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.soutiens-more > img {
+  width: 30%;
+}
+
+.btn-soutiens {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-soutiens > a:hover {
+  background-color: white;
+  border: 2px solid #6a55ea;
+  color: #6a55ea;
+  transition: 0.3s;
+}
+
+.bold-purple {
+  color: var(--primary-purple);
+  font-weight: 500;
+}
+
+.title-soutiens {
+  margin-bottom: unset;
+}
+
+.title-soutiens::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-purple);
+  transition: transform 0.25s ease-out;
+}
+
+.title-soutiens-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.title-soutiens-container .title-soutiens::after {
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transform: scale(0);
+}
+
+.title-soutiens-container .title-soutiens:hover::after,
+.title-soutiens-container .title-soutiens:focus::after {
+  transform-origin: bottom left;
+  transform: scale(1);
+}
+
+/* .text-soutiens-more {
+  position: relative;
+  overflow: hidden;
+}
+.bold-purple::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-purple);
+  transition: transform 0.25s ease-out;
+}
+.text-soutiens-more .bold-purple::after {
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transform: scale(0);
+}
+.text-soutiens-more .bold-purple:hover::after, .text-soutiens-more .bold-purple:focus::after {
+  transform-origin: bottom left;
+  transform: scale(1);
+} */
+
 /* ! MEDIAQUERIES */
 
 @media screen and (max-width: 375px) {
@@ -1148,6 +1272,14 @@ ul {
     align-items: center;
     justify-items: center;
     column-gap: 1.5rem;
+  }
+  /* SOUTIENS */
+  .soutiens {
+    flex-direction: row;
+  }
+
+  .soutiens-vid {
+    width: 60%;
   }
 }
 
