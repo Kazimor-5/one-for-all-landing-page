@@ -627,9 +627,8 @@ ul {
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
-.paint {
-  font-family: 'Finger Paint', 'Montserrat', sans-serif;
-  color: #ce2127;
+.text-red {
+  color: rgb(204, 49, 62) ;
 }
 
 .hope {
