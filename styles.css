@@ -1934,10 +1934,6 @@ footer .containerContact .containerButton a:hover {
     min-height: 20vh;
   }
 
-  .button-reseau {
-    justify-content: end;
-  }
-
   .section-reseau {
     justify-content: space-between;
   }
