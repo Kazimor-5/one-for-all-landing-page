@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
+@import url('http://fonts.cdnfonts.com/css/painting-with-chocolate');
 /* ! ========================ROOTING======================= */
 
 html {
@@ -118,6 +119,10 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+
+.one4all-font {
+  font-family: 'Painting With Chocolate', sans-serif;
 }
 
 .img {
