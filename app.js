@@ -90,3 +90,47 @@ resume = () => {
     plusSlides(slideIndex);
   }, 3000);
 };
+
+// ! ANIMATIONS
+
+const headerImg = document.querySelector('.fleurColor');
+const mouvementTitle = document.querySelector('.title-movement-container');
+const mouvementText = document.querySelector('.movement');
+const moreText = document.window.addEventListener('scroll', () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewPort = headerImg.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
+  ) {
+    headerImg.classList.add('active');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewPort = mouvementText.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
+  ) {
+    mouvementText.classList.add('active');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewPort = mouvementTitle.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
+  ) {
+    mouvementTitle.classList.add('active');
+  }
+});
