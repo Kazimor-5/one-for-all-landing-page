@@ -96,7 +96,14 @@ resume = () => {
 const headerImg = document.querySelector('.fleurColor');
 const mouvementTitle = document.querySelector('.title-movement-container');
 const mouvementText = document.querySelector('.movement');
-const moreText = document.window.addEventListener('scroll', () => {
+const moreText = document.querySelector('.more');
+const fonctionnementBanner = document.querySelector('.banner-img-container');
+const fonctionnementImg = document.querySelector(
+  '.fonctionnement-img-container'
+);
+const fonctionnementContent = document.querySelector('.fonctionnement-content');
+
+window.addEventListener('scroll', () => {
   const { scrollTop, clientHeight } = document.documentElement;
 
   const topElementToTopViewPort = headerImg.getBoundingClientRect().top;
@@ -132,5 +139,59 @@ window.addEventListener('scroll', () => {
     (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
   ) {
     mouvementTitle.classList.add('active');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewPort = moreText.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
+  ) {
+    moreText.classList.add('active');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewPort =
+    fonctionnementBanner.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.9
+  ) {
+    fonctionnementBanner.classList.add('active');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewPort = fonctionnementImg.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.05
+  ) {
+    fonctionnementImg.classList.add('active');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewPort =
+    fonctionnementContent.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
+  ) {
+    fonctionnementContent.classList.add('active');
   }
 });
