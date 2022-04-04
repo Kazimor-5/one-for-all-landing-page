@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400');
-@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
+@import url('http://fonts.cdnfonts.com/css/painting-with-chocolate');
 /* ! ========================ROOTING======================= */
 
 html {
@@ -122,6 +119,10 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+
+.one4all-font {
+  font-family: 'Painting With Chocolate', sans-serif;
 }
 
 .img {
@@ -373,7 +374,6 @@ ul {
 }
 
 .movement .text > p {
-  text-align: center;
   padding: 5px;
 }
 
@@ -624,11 +624,6 @@ ul {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
-}
-
-.paint {
-  font-family: 'Finger Paint', 'Montserrat', sans-serif;
-  color: #ce2127;
 }
 
 .hope {
