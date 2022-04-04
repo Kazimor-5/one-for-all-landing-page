@@ -362,7 +362,7 @@ ul {
 .movement {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
@@ -373,17 +373,16 @@ ul {
 }
 
 .movement .text > p {
-  font-size: 0.65rem;
   text-align: center;
   padding: 5px;
 }
 
 .movement .img-fleur > img {
-  width: 200px;
+  width: 400px;
 }
 
 .domains > img {
-  width: 200px;
+  width: 500px;
 }
 
 .domains {
