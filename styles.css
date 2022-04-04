@@ -593,11 +593,14 @@ ul {
 .history {
   background-color: rgb(255, 243, 219);
   padding: 15px;
-  padding-top: 35px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.mb-10px {
+  margin-bottom: 10px;
 }
 
 .samurai {
@@ -1884,7 +1887,15 @@ footer .containerContact .containerButton a:hover {
   }
 
   .img-hope {
-    width: 50%;
+    width: 40%;
+  }
+
+  .text-hope {
+    width: 40%;
+  }
+
+  .histoire-title {
+    margin-bottom: 30px;
   }
 
   /* CONSTAT */
