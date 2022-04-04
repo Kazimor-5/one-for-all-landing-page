@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400');
-@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
+@import url('http://fonts.cdnfonts.com/css/painting-with-chocolate');
 /* ! ========================ROOTING======================= */
 
 html {
@@ -76,7 +73,7 @@ p {
 }
 
 h1,
-h2{
+h2 {
   margin: 0;
   margin-bottom: 1.38rem;
   font-family: var(--headingFont);
@@ -106,7 +103,7 @@ h5 {
   font-size: 1.25rem;
 }
 
-strong{
+strong {
   color: #6a55ea;
 }
 
@@ -122,6 +119,10 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+
+.one4all-font {
+  font-family: 'Painting With Chocolate', sans-serif;
 }
 
 .img {
@@ -219,7 +220,7 @@ ul {
   font-weight: 500;
 }
 
-.nav-anchor{
+.nav-anchor {
   position: relative;
 }
 
@@ -247,7 +248,7 @@ ul {
   transform: scale(1);
 }
 
-.navbar .heart{
+.navbar .heart {
   padding: 12px 20px;
   border-radius: 10px;
   font-weight: 500;
@@ -257,11 +258,11 @@ ul {
   transition: all ease-out 0.3s;
 }
 
-.navbar .heart i{
+.navbar .heart i {
   margin-right: 10px;
 }
 
-.navbar .heart:hover{
+.navbar .heart:hover {
   background-color: white;
   color: #6a55ea;
 }
@@ -343,7 +344,7 @@ ul {
   color: var(--primary-purple);
 }
 
-.slideshow-container .button{
+.slideshow-container .button {
   position: absolute;
   bottom: 10%;
   right: 5%;
@@ -392,7 +393,7 @@ ul {
   align-items: center;
 }
 
-.domains h3{
+.domains h3 {
   font-family: var(--bodyFont);
   text-transform: uppercase;
   font-weight: 600;
@@ -482,7 +483,7 @@ ul {
   text-transform: uppercase;
 }
 
-.fonctionnement-content .btn::first-letter{
+.fonctionnement-content .btn::first-letter {
   text-transform: uppercase;
 }
 
@@ -518,7 +519,6 @@ ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  
 }
 .gandhi img {
   width: 80%;
@@ -564,15 +564,14 @@ ul {
   width: 40%;
 }
 
-.founder .content button{
+.founder .content button {
   background-color: white;
   border: solid 3px white;
   color: #51647e;
   transition: 0.3s;
-
 }
 
-.founder .content button:hover{
+.founder .content button:hover {
   background-color: transparent;
   color: white;
 }
@@ -735,7 +734,7 @@ ul {
   justify-content: space-around;
 }
 
-.earth-img-container{
+.earth-img-container {
   margin-bottom: 20px;
 }
 
@@ -781,7 +780,8 @@ ul {
   border-radius: 10px;
   width: 70%;
   margin: 0;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .soutiens-more > img {
@@ -918,7 +918,7 @@ ul {
   padding: 20px;
 }
 
-.container-losange .containerDecompte{
+.container-losange .containerDecompte {
   position: relative;
   margin: 40px 20px;
 }
@@ -941,7 +941,7 @@ ul {
   z-index: 0;
 }
 
-.losange::before{
+.losange::before {
   content: '';
   width: 57px;
   height: 57px;
@@ -1008,7 +1008,6 @@ ul {
   color: #0d384b;
   border: 2px solid #0d384b;
   box-shadow: var(--shadow-3);
-
 }
 
 .paint-purple {
@@ -1046,7 +1045,6 @@ ul {
   height: 80px;
   box-sizing: unset;
 }
-
 
 .social-links-content p {
   margin: 0;
@@ -1139,7 +1137,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.challenge .containerImg{
+.challenge .containerImg {
   margin-top: 50px;
 }
 
@@ -1173,13 +1171,13 @@ ul {
 
 /* ! NEWS */
 
-.containerFeed{
+.containerFeed {
   background-color: #eef1f8;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.containerFeed h2{
+.containerFeed h2 {
   width: 100%;
   text-align: center;
   color: #6a55ea;
@@ -1188,72 +1186,73 @@ ul {
   margin-bottom: 50px;
 }
 
-.feedSocial{
-  
+.feedSocial {
   display: flex;
   justify-content: space-evenly;
 }
 
-.feedSocial *{
+.feedSocial * {
   box-sizing: content-box;
 }
 
-.feedSocial .containerCards{
+.feedSocial .containerCards {
   padding: 15px 10px;
 }
 
-.feedSocial .containerCards:nth-child(2){
+.feedSocial .containerCards:nth-child(2) {
   margin-top: 50px;
 }
 
-.feedSocial .containerCards .card{
+.feedSocial .containerCards .card {
   width: 350px;
   height: 500px;
   border-radius: 10px;
   margin-bottom: 10px;
   overflow: hidden;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.feedSocial .containerCards:nth-child(1) .card{
-  background-color: #FFE4E1;
+.feedSocial .containerCards:nth-child(1) .card {
+  background-color: #ffe4e1;
 }
 
-.feedSocial .containerCards:nth-child(2) .card{
-  background-color: #F0E5FE;
+.feedSocial .containerCards:nth-child(2) .card {
+  background-color: #f0e5fe;
 }
 
-.feedSocial .containerCards:nth-child(1) .card{
-  background-color: #EDF2FF;
+.feedSocial .containerCards:nth-child(1) .card {
+  background-color: #edf2ff;
 }
 
-.feedSocial .containerCards .card .img{
+.feedSocial .containerCards .card .img {
   height: 50%;
   display: flex;
   justify-content: center;
   transition: 0.4s ease-in;
 }
 
-.feedSocial .containerCards .card:hover .img{
+.feedSocial .containerCards .card:hover .img {
   height: 60%;
 }
 
-.feedSocial .containerCards .card .img img{
+.feedSocial .containerCards .card .img img {
   height: 100%;
   width: auto;
 }
 
-.feedSocial .containerCards .card .containerText{
+.feedSocial .containerCards .card .containerText {
   padding: 15px;
 }
 
-.feedSocial .containerCards .card .containerText .header{
+.feedSocial .containerCards .card .containerText .header {
   display: flex;
   align-items: center;
 }
 
-.feedSocial .containerCards .card .containerText .header img{
+.feedSocial .containerCards .card .containerText .header img {
   width: 60px;
   height: 60px;
   height: auto;
@@ -1265,12 +1264,12 @@ ul {
   margin-right: 10px;
 }
 
-.feedSocial .containerCards .card .containerText .header{
+.feedSocial .containerCards .card .containerText .header {
   margin-bottom: 20px;
   line-height: 15px;
 }
 
-.feedSocial .containerCards .card .containerText .header .title h3{
+.feedSocial .containerCards .card .containerText .header .title h3 {
   font-size: 14px;
   font-family: var(--bodyFont);
   text-align: left;
@@ -1279,14 +1278,14 @@ ul {
   margin: 0;
 }
 
-.feedSocial .containerCards .card .containerText .header .title p{
+.feedSocial .containerCards .card .containerText .header .title p {
   font-size: 12px;
   color: rgb(94, 94, 94);
   text-align: left;
   margin: 0;
 }
 
-.feedSocial .containerCards .card .containerText i{
+.feedSocial .containerCards .card .containerText i {
   font-size: 30px;
   color: white;
   border-radius: 100%;
@@ -1303,12 +1302,12 @@ ul {
   padding: 15px;
 }
 
-.feedSocial .containerCards .card .containerText .description{
+.feedSocial .containerCards .card .containerText .description {
   font-size: 14px;
   line-height: 16px;
 }
 
-.feedSocial .containerCards .card .containerText .description a{
+.feedSocial .containerCards .card .containerText .description a {
   font-size: 14px;
   font-weight: 600;
   color: #6a55ea;
@@ -1318,44 +1317,49 @@ ul {
   transition: 0.3s;
 }
 
-.feedSocial .containerCards .card .containerText .description a:hover{
+.feedSocial .containerCards .card .containerText .description a:hover {
   font-weight: 700;
   transition: 0.3s;
 }
 
 /* ! EVENEMENT */
 
-.events{
+.events {
   position: relative;
   min-height: 80vh;
   box-sizing: unset;
 }
 
-.events *{
+.events * {
   box-sizing: unset;
 }
 
-.events .containerText{
+.events .containerText {
   padding: 100px 0 50px 100px;
   width: 70%;
   min-height: 80vh;
   position: relative;
-  background: linear-gradient(to right bottom, #b6aaff 0%,#d3cbfd 10%, #eeeeee 100%);
+  background: linear-gradient(
+    to right bottom,
+    #b6aaff 0%,
+    #d3cbfd 10%,
+    #eeeeee 100%
+  );
 }
 
-.events .containerText span{
+.events .containerText span {
   color: #6a55ea;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.events .containerText h2{
+.events .containerText h2 {
   font-size: 70px;
   color: black;
   width: 80%;
 }
 
-.events .containerText .containerIllustration2{
+.events .containerText .containerIllustration2 {
   width: 60%;
   margin-top: 50px;
   z-index: 2;
@@ -1363,12 +1367,12 @@ ul {
   margin-bottom: 30px;
 }
 
-.events .containerText .containerIllustration2 img{
+.events .containerText .containerIllustration2 img {
   width: 100%;
   height: auto;
 }
 
-.events .containerIllustration{
+.events .containerIllustration {
   width: 35%;
   overflow: hidden;
   display: flex;
@@ -1378,23 +1382,23 @@ ul {
   right: 0;
 }
 
-.events .containerIllustration img{
+.events .containerIllustration img {
   height: 70vh;
   width: auto;
 }
 
-.events .containerButton{
+.events .containerButton {
   justify-content: flex-start;
 }
 
-.events .containerText .shape{
+.events .containerText .shape {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 0;
 }
 
-.events .btn{
+.events .btn {
   margin-top: 50px;
 }
 
@@ -1713,7 +1717,7 @@ footer .containerContact .containerButton a:hover {
     display: flex;
   }
 
-  .navbar{
+  .navbar {
     min-height: 80px;
   }
   /* HEADER */
@@ -2052,12 +2056,12 @@ footer .containerContact .containerButton a:hover {
 }
 
 @media only screen and (max-width: 1300px) {
-  .feedSocial{
+  .feedSocial {
     flex-direction: column;
     align-items: center;
   }
 
-  .feedSocial .containerCards{
+  .feedSocial .containerCards {
     display: flex;
     width: 90%;
     justify-content: space-around;
@@ -2065,26 +2069,26 @@ footer .containerContact .containerButton a:hover {
     column-gap: 50px;
   }
 
-  .feedSocial .containerCards .card{
+  .feedSocial .containerCards .card {
     margin-bottom: 30px;
     height: 600px;
   }
 
-  .feedSocial .containerCards:nth-child(2){
+  .feedSocial .containerCards:nth-child(2) {
     margin-top: 0;
   }
 
-  .events .containerIllustration{
+  .events .containerIllustration {
     display: none;
   }
 
-  .events .containerText{
+  .events .containerText {
     width: 80%;
     padding-bottom: 40px;
     padding: 10vw;
   }
 
-  .events .containerText h2{
+  .events .containerText h2 {
     font-size: 5.5vw;
   }
 
@@ -2118,62 +2122,64 @@ footer .containerContact .containerButton a:hover {
     align-items: center;
   }
 
-  .challenge_text_boutton{
+  .challenge_text_boutton {
     flex-direction: column;
   }
 
-  .challenge .containerImg{
+  .challenge .containerImg {
     display: flex;
     justify-content: center;
   }
 
-  .challenge .containerText{
+  .challenge .containerText {
     width: 100%;
   }
 
-  .challenge .containerText .challenge_text{
+  .challenge .containerText .challenge_text {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .challenge .containerText p{
+  .challenge .containerText p {
     width: 80%;
     max-width: 100%;
   }
 
-  .challenge .containerImg img{
+  .challenge .containerImg img {
     width: 80%;
     height: auto;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .founder{
+  .founder {
     flex-direction: column;
     align-items: center;
   }
 
-  .founder .founder-img-container, .founder .founder-img-container img, .founder .content{
+  .founder .founder-img-container,
+  .founder .founder-img-container img,
+  .founder .content {
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .containerFeed h2{
+  .containerFeed h2 {
     font-size: 6vw;
   }
 
-  .events .containerText p{
+  .events .containerText p {
     font-size: 3vw;
   }
 
-  .events .containerText .containerIllustration2{
+  .events .containerText .containerIllustration2 {
     width: 100%;
   }
 
-  .events .containerText .shape{
+  .events .containerText .shape {
     display: none;
   }
 }
