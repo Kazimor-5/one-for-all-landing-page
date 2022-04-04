@@ -1590,24 +1590,26 @@ footer .containerContact .containerButton a:hover {
   color: #192136;
 }
 
+/*SLIDE-soutien*/
+
 .slider-show-soutien{
-  width: 100%;
+  width: 99vw;
   height: 500px;
-  
-  overflow: hidden!important;
+  position: relative;
+  overflow: hidden;
 }
-.slides-soutien{
-  
+.slides-soutien{ 
   position: absolute;
   display: flex;
-  width: 600%;
+  width: 400%;
   height: 500px;
-  left: 500%;
-  animation: defilment 10s ease-in infinite;
+  left: -400%;
+  animation: defilment 10s ease-out infinite;
   
 }
 .slide-soutien img{
-  width: auto; height: 500px;
+  width: auto; 
+  height: 500px;
 }
 .slide-soutien{
   
@@ -1618,49 +1620,21 @@ footer .containerContact .containerButton a:hover {
   0% {
     left: 0%;
   }
-  
-  10% {
+
+  20% {
     left: 0%;
   }
 
-  15% {
-    left: -100%;
-  }
-
-  20% {
-    left: -100%;
-  }
-  
-  25% {
-    left: -200%;
-  }
-  
-  30% {
-    left: -200%;
-  }
-
   40% {
-    left: -300%;
+    left: -430%;
   }
 
   50% {
-    left: -400%;
-  }
-  
-  60% {
-    left: -500%;
-  }
-  
-  70% {
-    left: -500%;
+    left: -430%;
   }
   
   80% {
-    left: -400%;
-  }
-
-  90% {
-    left: -400%;
+    left: -200%;
   }
 
   100% {
@@ -2260,4 +2234,59 @@ footer .containerContact .containerButton a:hover {
   .events .containerText .shape {
     display: none;
   }
+  /*slider-soutien*/
+  .slider-show-soutien{
+    width: 99vw;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slides-soutien{ 
+    position: absolute;
+    display: flex;
+    width: 600%;
+    height: 500px;
+    left: -500%;
+    animation: defilment 10s ease-out infinite;
+    
+  }
+  .slide-soutien img{
+    width: auto; 
+    height: 500px;
+  }
+  .slide-soutien{
+    
+    width: auto;
+    height: 500px;
+  }
+  @keyframes defilment {
+    0% {
+      left: 0%;
+    }
+  
+    20% {
+      left: 0%;
+    }
+  
+    40% {
+      left: -1000%;
+    }
+  
+    50% {
+      left: -1000%;
+    }
+
+    50% {
+      left: -800%;
+    }
+
+    80% {
+      left: -600%;
+    }
+  
+    100% {
+      left: 0;
+    }
+  }
+  
 }
