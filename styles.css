@@ -1586,6 +1586,19 @@ footer .containerContact .containerButton a:hover {
   color: #192136;
 }
 
+.slider-soutien{
+  
+}
+.slide-soutien{
+  width: 500px;
+  height: auto;
+  position: relative;
+  
+}
+@keyframes defilment {
+ 
+}
+
 /* ! MEDIAQUERIES */
 
 @media screen and (max-width: 375px) {
