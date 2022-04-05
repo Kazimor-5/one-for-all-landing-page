@@ -47,11 +47,11 @@ function plusSlides(n) {
   if (n === -1) {
     myTimer = setInterval(function () {
       plusSlides(n + 2);
-    }, 3000);
+    }, 5000);
   } else {
     myTimer = setInterval(function () {
       plusSlides(n + 1);
-    }, 3000);
+    }, 5000);
   }
 }
 
@@ -59,14 +59,13 @@ function currentSlide(n) {
   clearInterval(myTimer);
   myTimer = setInterval(function () {
     plusSlides(n + 1);
-  }, 3000);
+  }, 5000);
   showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName('mySlides');
-  var dots = document.getElementsByClassName('dot');
+  let i;
+  let slides = document.getElementsByClassName('mySlides');
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -88,5 +87,5 @@ resume = () => {
   clearInterval(myTimer);
   myTimer = setInterval(function () {
     plusSlides(slideIndex);
-  }, 3000);
+  }, 5000);
 };
