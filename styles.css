@@ -1884,6 +1884,7 @@ footer .containerContact .containerButton a:hover {
 
   .hope {
     column-gap: 1.5rem;
+    width: 85%;
   }
 
   .img-hope {
@@ -1896,6 +1897,10 @@ footer .containerContact .containerButton a:hover {
 
   .histoire-title {
     margin-bottom: 30px;
+  }
+
+  .soleil-img-container {
+    width: 30%;
   }
 
   /* CONSTAT */
