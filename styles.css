@@ -300,7 +300,19 @@ ul {
 }
 
 .fleurColor {
-  width: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo-fleur {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-text {
+  width: 50%;
 }
 
 /* ! HEADER-SLIDER */
@@ -1791,9 +1803,9 @@ footer .containerContact .containerButton a:hover {
   .background {
     height: 100vh;
   }
-  .fleurColor {
+  /* .fleurColor {
     width: 60%;
-  }
+  } */
 
   /* MOUVEMENT */
 
