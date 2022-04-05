@@ -258,14 +258,15 @@ ul {
   max-width: 100%;
   position: relative;
   overflow: hidden;
-  margin: auto
+  margin: auto;
+  height: 40vw;
+  display: flex;
+  align-items: center;
 }
 
 .mySlides {
   display: none;
-  width: 100%;
-height: auto;
-   
+  width: 100%;  
 }
 
 .prev,
