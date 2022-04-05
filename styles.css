@@ -1400,7 +1400,11 @@ ul {
 }
 
 .events .containerButton {
-  justify-content: flex-start;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  z-index: 1;
 }
 
 .events .containerText .shape {
@@ -1408,10 +1412,6 @@ ul {
   bottom: 0;
   right: 0;
   z-index: 0;
-}
-
-.events .btn {
-  margin-top: 50px;
 }
 
 /* ! FOOTER */
@@ -1785,6 +1785,10 @@ footer .containerContact .containerButton a:hover {
   }
 
   .events .containerText .containerIllustration2{
+    width: 60%;
+  }
+
+  .events .containerText .containerButton{
     width: 60%;
   }
 
@@ -2192,6 +2196,10 @@ footer .containerContact .containerButton a:hover {
   }
 
   .events .containerText .containerIllustration2 {
+    width: 100%;
+  }
+
+  .events .containerText .containerButton{
     width: 100%;
   }
 
