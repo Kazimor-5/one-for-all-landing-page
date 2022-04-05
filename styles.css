@@ -1366,13 +1366,13 @@ ul {
 }
 
 .events .containerText h2 {
-  font-size: 70px;
   color: black;
   width: 80%;
+  font-size: 1.953rem;
 }
 
 .events .containerText .containerIllustration2 {
-  width: 60%;
+  width: 90%;
   margin-top: 50px;
   z-index: 2;
   position: relative;
@@ -1784,6 +1784,14 @@ footer .containerContact .containerButton a:hover {
     width: 400px;
   }
 
+  .events .containerText .containerIllustration2{
+    width: 60%;
+  }
+
+  .events .containerText h2{
+    font-size: 2.441rem;
+  }
+
   /* PHILOSOPHIE */
   /* .article-title {
     left: 6%;
@@ -2098,10 +2106,6 @@ footer .containerContact .containerButton a:hover {
     width: 80%;
     padding-bottom: 40px;
     padding: 10vw;
-  }
-
-  .events .containerText h2 {
-    font-size: 5.5vw;
   }
 
   footer .containerFooter {
