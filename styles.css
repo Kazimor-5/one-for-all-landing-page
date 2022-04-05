@@ -1388,7 +1388,7 @@ ul {
   width: 35%;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1785,11 +1785,11 @@ footer .containerContact .containerButton a:hover {
   }
 
   .events .containerText .containerIllustration2{
-    width: 60%;
+    width: 70%;
   }
 
   .events .containerText .containerButton{
-    width: 60%;
+    width: 70%;
   }
 
   .events .containerText h2{
