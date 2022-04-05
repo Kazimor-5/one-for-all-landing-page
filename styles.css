@@ -171,6 +171,44 @@ ul {
   margin: 0 auto;
 }
 
+/* ! ANIMATIONS */
+
+.slide-left {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.slide-right {
+  transform: translateX(50%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.slide-bottom {
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.slide-top {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.slide-bottom.active,
+.slide-top.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-left.active,
+.slide-right.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 /* ! NAVBAR */
 
 .navbar {
