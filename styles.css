@@ -1150,7 +1150,7 @@ ul {
   size: 100px;
   display: flex;
   justify-content: var(--red-light);  
-  align-items: flex-start;
+  margin-left: 0;
 }
 
 .challenge {
@@ -1158,6 +1158,7 @@ ul {
   padding-top: 20px;
   padding-bottom: var(--grey-50);
   background-color: rgba(248, 217, 150, 0.221);
+  background-size: cover;
 }
 
 .challenge .containerImg {
@@ -1175,10 +1176,7 @@ ul {
   width: 100%;
   cursor: pointer;
   margin-top: 50px;
-  text-align: center;
-  display: grid;
-  justify-items: center; 
-  justify-content: center; 
+  
   
 }
 
@@ -1644,29 +1642,17 @@ footer .containerContact .containerButton a:hover {
   height: 500px;
 }
 @keyframes defilment {
-  0% {
-    left: 0%;
-  }
-
-  20% {
-    left: 0%;
-  }
-
-  40% {
-    left: -430%;
-  }
-
-  50% {
-    left: -430%;
-  }
-  
-  80% {
-    left: -200%;
-  }
-
-  100% {
-    left: 0;
-  }
+  0% {left: 0;}
+  10% {left: 0%;}
+  20% {left: -100%;}
+  30% {left: -100%;}
+  40% {left: -200%;}
+  50% {left: -200%;}
+  60% {left: -300%;}
+  70% {left: -300%;}
+  80% {left: -400%;}
+  90% {left: -400%;}
+  100% {left: 0;}
 }
 
 /* ! MEDIAQUERIES */
@@ -2261,6 +2247,11 @@ footer .containerContact .containerButton a:hover {
   .events .containerText .shape {
     display: none;
   }
+
+  .challenge_titre img{
+    width: 100%;
+  }
+
   /*slider-soutien*/
   .slider-show-soutien{
     width: 99vw;
