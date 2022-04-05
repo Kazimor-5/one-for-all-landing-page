@@ -92,106 +92,52 @@ resume = () => {
 };
 
 // ! ANIMATIONS
+const slideLeft = document.querySelectorAll('.slide-left');
+const slideRight = document.querySelectorAll('.slide-right');
+const slideBottom = document.querySelectorAll('.slide-bottom');
+const slideTop = document.querySelectorAll('.slide-top');
 
-const headerImg = document.querySelector('.fleurColor');
-const mouvementTitle = document.querySelector('.title-movement-container');
-const mouvementText = document.querySelector('.movement');
-const moreText = document.querySelector('.more');
-const fonctionnementBanner = document.querySelector('.banner-img-container');
-const fonctionnementImg = document.querySelector(
-  '.fonctionnement-img-container'
-);
-const fonctionnementContent = document.querySelector('.fonctionnement-content');
+// * Définir les options de l'IntersctionObserver
+const ratio = 0.1;
 
-window.addEventListener('scroll', () => {
-  const { scrollTop, clientHeight } = document.documentElement;
+const options = {
+  // * option qui détermine s'il est visible ou non
+  root: null,
+  // * défini la marge qui faut atteindre pour lancer l'animation
+  rootMargin: '0px',
+  // * à partir de quelle moment l'élément est détecté
+  threshold: ratio,
+};
 
-  const topElementToTopViewPort = headerImg.getBoundingClientRect().top;
+// * fonction qui gère l'affichage de l'élément
+const handleIntersect = (entries, observer) => {
+  // * on itère dans l'ensemble des entrées
+  entries.forEach((entry) => {
+    // * si le ratio d'intersection est plus grand que le raio qu'on a défini
+    if (entry.intersectionRatio > ratio) {
+      // * alors on ajoute la classe acive à l'entrée
+      entry.target.classList.add('active');
+      observer.unobserve(entry.target);
+    }
+  });
+};
 
-  if (
-    scrollTop >
-    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
-  ) {
-    headerImg.classList.add('active');
-  }
+// * on crée une nouvelle instance de IntersectionObserver
+const observer = new IntersectionObserver(handleIntersect, options);
+
+// * on observe les éléments qui ont la classe donnée
+slideRight.forEach((element) => {
+  observer.observe(element);
 });
 
-window.addEventListener('scroll', () => {
-  const { scrollTop, clientHeight } = document.documentElement;
-
-  const topElementToTopViewPort = mouvementText.getBoundingClientRect().top;
-
-  if (
-    scrollTop >
-    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
-  ) {
-    mouvementText.classList.add('active');
-  }
+slideLeft.forEach((element) => {
+  observer.observe(element);
 });
 
-window.addEventListener('scroll', () => {
-  const { scrollTop, clientHeight } = document.documentElement;
-
-  const topElementToTopViewPort = mouvementTitle.getBoundingClientRect().top;
-
-  if (
-    scrollTop >
-    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
-  ) {
-    mouvementTitle.classList.add('active');
-  }
+slideBottom.forEach((element) => {
+  observer.observe(element);
 });
 
-window.addEventListener('scroll', () => {
-  const { scrollTop, clientHeight } = document.documentElement;
-
-  const topElementToTopViewPort = moreText.getBoundingClientRect().top;
-
-  if (
-    scrollTop >
-    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
-  ) {
-    moreText.classList.add('active');
-  }
-});
-
-window.addEventListener('scroll', () => {
-  const { scrollTop, clientHeight } = document.documentElement;
-
-  const topElementToTopViewPort =
-    fonctionnementBanner.getBoundingClientRect().top;
-
-  if (
-    scrollTop >
-    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.9
-  ) {
-    fonctionnementBanner.classList.add('active');
-  }
-});
-
-window.addEventListener('scroll', () => {
-  const { scrollTop, clientHeight } = document.documentElement;
-
-  const topElementToTopViewPort = fonctionnementImg.getBoundingClientRect().top;
-
-  if (
-    scrollTop >
-    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.05
-  ) {
-    fonctionnementImg.classList.add('active');
-  }
-});
-
-window.addEventListener('scroll', () => {
-  const { scrollTop, clientHeight } = document.documentElement;
-
-  const topElementToTopViewPort =
-    fonctionnementContent.getBoundingClientRect().top;
-
-  if (
-    scrollTop >
-    (scrollTop + topElementToTopViewPort).toFixed() - clientHeight * 0.99
-  ) {
-    fonctionnementContent.classList.add('active');
-  }
+slideTop.forEach((element) => {
+  observer.observe(element);
 });
