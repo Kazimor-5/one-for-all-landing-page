@@ -176,12 +176,13 @@ ul {
 .navbar {
   width: 100%;
   box-shadow: var(--shadow-2);
-  padding: 0.9rem;
   position: sticky;
+  margin-bottom: 0.5rem;
   border-bottom-left-radius: 1.875rem;
   border-bottom-right-radius: 1.875rem;
-  padding: 0;
-  z-index: 2;
+  z-index: 999;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -200,6 +201,10 @@ ul {
   transition: var(--transition);
   margin: 0;
   padding: 10px 0;
+}
+
+.open-sidebar-btn {
+  padding: 1rem;
 }
 
 .open-sidebar-btn,
