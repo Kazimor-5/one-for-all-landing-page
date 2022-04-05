@@ -270,6 +270,7 @@ ul {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-purple);
+  text-align: center;
 }
 
 .purple {
