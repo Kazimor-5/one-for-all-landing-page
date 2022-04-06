@@ -94,7 +94,7 @@ resume = () => {
 let myIndex = 0;
 carousel();
 
-let carousel = () => {
+function carousel() {
   let i;
   let x = document.getElementsByClassName("slide-event");
   for (i = 0; i < x.length; i++) {
