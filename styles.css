@@ -776,9 +776,6 @@ ul {
   align-items: center;
 }
 
-.soutiens-vid > iframe {
-  margin-top: 1.1rem;
-}
 
 .soutiens-more {
   display: flex;
@@ -843,6 +840,11 @@ ul {
 .title-soutiens-container {
   position: relative;
   overflow: hidden;
+}
+
+.title-soutiens-container hr{
+  background-color: var(--primary-purple);
+  border: solid 2px var(--primary-purple);
 }
 
 .title-soutiens-container .title-soutiens::after {
@@ -1626,10 +1628,10 @@ footer .containerContact .containerButton a:hover {
 .slides-soutien{ 
   position: absolute;
   display: flex;
-  width: 400%;
-  height: 500px;
-  left: -400%;
-  animation: defilment 10s ease-out infinite;
+  width: 500%;
+  height: 550px;
+  left: -550%;
+  animation: defilment 30s ease-out infinite;
   
 }
 .slide-soutien img{
@@ -1644,15 +1646,25 @@ footer .containerContact .containerButton a:hover {
 @keyframes defilment {
   0% {left: 0;}
   10% {left: 0%;}
+  15% {left: -100%;}
   20% {left: -100%;}
-  30% {left: -100%;}
+  25% {left: -150%;}
+  30% {left: -150%;}
+  35% {left: -200%;}
   40% {left: -200%;}
-  50% {left: -200%;}
+  45% {left: -250%;}
+  50% {left: -250%;}
+  55% {left: -300%;}
   60% {left: -300%;}
-  70% {left: -300%;}
+  65% {left: -350%;}
+  70% {left: -350%;}
+  75% {left: -400%;}
   80% {left: -400%;}
-  90% {left: -400%;}
-  100% {left: 0;}
+  83.5% {left: -450%;}
+  85% {left: -450%;}
+  90% {left: -530%;}
+  95% {left: -530%;}
+  100% {left: -530%;}
 }
 
 /* ! MEDIAQUERIES */
@@ -1835,6 +1847,42 @@ footer .containerContact .containerButton a:hover {
   .fonctionnement-content {
     margin-left: 3rem;
     width: 400px;
+  }
+
+  /*slide-soutien*/
+  .slider-show-soutien{
+    width: 99vw;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slides-soutien{ 
+    position: absolute;
+    display: flex;
+    width: 200%;
+    height: 550px;
+    left: -150%;
+    animation: defilment 30s ease-out infinite;
+    
+  }
+  .slide-soutien img{
+    width: auto; 
+    height: 500px;
+  }
+  .slide-soutien{
+    
+    width: auto;
+    height: 500px;
+  }
+  @keyframes defilment {
+    0% {left: 0;}
+    10% {left: 0%;}
+    30% {left: -400%;}
+    50% {left: -400%;}
+    60% {left: -800%;}
+    70% {left: -800%;}
+    80% {left: -1080%;}
+    100% {left: -1080%;}
   }
 
   /* PHILOSOPHIE */
@@ -2066,6 +2114,54 @@ footer .containerContact .containerButton a:hover {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
   }
+  /*slide-soutien*/
+  .slider-show-soutien{
+    width: 99vw;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slides-soutien{ 
+    position: absolute;
+    display: flex;
+    width: 500%;
+    height: 550px;
+    left: -550%;
+    animation: defilment 30s ease-out infinite;
+    
+  }
+  .slide-soutien img{
+    width: auto; 
+    height: 500px;
+  }
+  .slide-soutien{
+    
+    width: auto;
+    height: 500px;
+  }
+  @keyframes defilment {
+    0% {left: 0;}
+    10% {left: 0%;}
+    15% {left: -100%;}
+    20% {left: -100%;}
+    25% {left: -150%;}
+    30% {left: -150%;}
+    35% {left: -200%;}
+    40% {left: -200%;}
+    45% {left: -250%;}
+    50% {left: -250%;}
+    55% {left: -300%;}
+    60% {left: -300%;}
+    65% {left: -350%;}
+    70% {left: -350%;}
+    75% {left: -400%;}
+    80% {left: -400%;}
+    83.5% {left: -450%;}
+    85% {left: -450%;}
+    90% {left: -530%;}
+    95% {left: -530%;}
+    100% {left: -530%;}
+  }
 
   /* FOOTER */
 }
@@ -2117,6 +2213,54 @@ footer .containerContact .containerButton a:hover {
   .section-reseau {
     justify-content: center;
     justify-content: space-evenly;
+  }
+  /*slide-soutien*/
+  .slider-show-soutien{
+    width: 99vw;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slides-soutien{ 
+    position: absolute;
+    display: flex;
+    width: 500%;
+    height: 550px;
+    left: -550%;
+    animation: defilment 30s ease-out infinite;
+    
+  }
+  .slide-soutien img{
+    width: auto; 
+    height: 500px;
+  }
+  .slide-soutien{
+    
+    width: auto;
+    height: 500px;
+  }
+  @keyframes defilment {
+    0% {left: 0;}
+    10% {left: 0%;}
+    15% {left: -100%;}
+    20% {left: -100%;}
+    25% {left: -150%;}
+    30% {left: -150%;}
+    35% {left: -200%;}
+    40% {left: -200%;}
+    45% {left: -250%;}
+    50% {left: -250%;}
+    55% {left: -300%;}
+    60% {left: -300%;}
+    65% {left: -350%;}
+    70% {left: -350%;}
+    75% {left: -400%;}
+    80% {left: -400%;}
+    83.5% {left: -450%;}
+    85% {left: -450%;}
+    90% {left: -530%;}
+    95% {left: -530%;}
+    100% {left: -530%;}
   }
 }
 
@@ -2216,6 +2360,53 @@ footer .containerContact .containerButton a:hover {
     width: 80%;
     height: auto;
   }
+  .slider-show-soutien{
+    width: 99vw;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slides-soutien{ 
+    position: absolute;
+    display: flex;
+    width: 500%;
+    height: 550px;
+    left: -550%;
+    animation: defilment 30s ease-out infinite;
+    
+  }
+  .slide-soutien img{
+    width: auto; 
+    height: 500px;
+  }
+  .slide-soutien{
+    
+    width: auto;
+    height: 500px;
+  }
+  @keyframes defilment {
+    0% {left: 0;}
+    10% {left: 0%;}
+    15% {left: -100%;}
+    20% {left: -100%;}
+    25% {left: -150%;}
+    30% {left: -150%;}
+    35% {left: -200%;}
+    40% {left: -200%;}
+    45% {left: -250%;}
+    50% {left: -250%;}
+    55% {left: -300%;}
+    60% {left: -300%;}
+    65% {left: -350%;}
+    70% {left: -350%;}
+    75% {left: -450%;}
+    80% {left: -450%;}
+    83.5% {left: -550%;}
+    85% {left: -550%;}
+    90% {left: -770%;}
+    95% {left: -770%;}
+    100% {left: -770%;}
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -2262,10 +2453,10 @@ footer .containerContact .containerButton a:hover {
   .slides-soutien{ 
     position: absolute;
     display: flex;
-    width: 600%;
-    height: 500px;
-    left: -500%;
-    animation: defilment 10s ease-out infinite;
+    width: 200%;
+    height: 550px;
+    left: -150%;
+    animation: defilment 30s ease-out infinite;
     
   }
   .slide-soutien img{
@@ -2278,33 +2469,22 @@ footer .containerContact .containerButton a:hover {
     height: 500px;
   }
   @keyframes defilment {
-    0% {
-      left: 0%;
-    }
-  
-    20% {
-      left: 0%;
-    }
-  
-    40% {
-      left: -1000%;
-    }
-  
-    50% {
-      left: -1000%;
-    }
+    
+      0% {left: 0;}
+      10% {left: 0%;}
 
-    50% {
-      left: -800%;
-    }
+      30% {left: -900%;}
 
-    80% {
-      left: -600%;
-    }
+    
+      50% {left: -900%;}
   
-    100% {
-      left: 0;
-    }
-  }
   
+      70% {left: -1500%;}
+   
+      90% {left: -2000%;}
+     
+      100% {left: -2000%;}
+    
+  
+}
 }
