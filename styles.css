@@ -877,6 +877,9 @@ ul {
 }
 
 /* ! RESEAU */
+.font-size-increase {
+  font-size: 1.25rem;
+}
 
 .section-reseau {
   display: flex;
