@@ -723,6 +723,16 @@ ul {
   border-radius: var(--border-radius);
 }
 
+.underline {
+  width: 100%;
+  height: 5px;
+  background-color: var(--primary-purple);
+}
+
+.title-revolution-container>h3 {
+  margin-bottom: unset;
+}
+
 .navbar {
   width: 100%;
   box-shadow: var(--shadow-2);
