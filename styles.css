@@ -258,14 +258,15 @@ ul {
   max-width: 100%;
   position: relative;
   overflow: hidden;
-  margin: auto
+  margin: auto;
+  height: 40vw;
+  display: flex;
+  align-items: center;
 }
 
 .mySlides {
   display: none;
   width: 100%;
-height: auto;
-   
 }
 
 .prev,
@@ -278,56 +279,53 @@ height: auto;
   margin-top: -22px;
   padding: 16px;
   color: #ffffff;
-  
+
   font-size: 60px;
-  transition: .6s ease;
-  border-radius: 0 3px 3px 0
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
 
 .next {
   left: 96%;
-  border-radius: 3px 3px 3px 3px
+  border-radius: 3px 3px 3px 3px;
 }
 
 .prev {
-  
-  border-radius: 3px 3px 3px 3px
+  border-radius: 3px 3px 3px 3px;
 }
 
 .prev:hover,
 .next:hover {
   color: #f2f2f2;
-  background-color: rgba(0, 0, 0, 0.8)
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .boutton {
   z-index: 9999;
- position: absolute;
- margin-left: 60%;
- margin-top: -100px;
+  position: absolute;
+  margin-left: 60%;
+  margin-top: -100px;
   width: 30%;
   cursor: pointer;
- 
 }
 
 .boutton a {
   color: #ffffff;
-  padding: 20px 40px 20px 40px; 
- 
+  padding: 20px 40px 20px 40px;
+
   top: 0;
   text-align: center;
-  background-color: rgb(86, 10, 148); 
+  background-color: rgb(86, 10, 148);
   border-radius: 10px;
 }
 
-@media only screen and  (max-device-width : 680px) {
+@media only screen and (max-device-width: 680px) {
   .boutton a {
     width: 50%;
-    padding: 5px; 
-
+    padding: 5px;
   }
   .boutton {
-   position: absolute;
+    position: absolute;
     width: 30%;
     cursor: pointer;
     font-size: small;
@@ -342,13 +340,12 @@ height: auto;
     margin-top: -22px;
     padding: 16px;
     color: #ffffff;
-    
+
     font-size: 20px;
-    transition: .6s ease;
-    border-radius: 0 3px 3px 0
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
   }
   .next {
     left: 87%;
-    
   }
 }
