@@ -287,7 +287,7 @@ ul {
 /* ! HEADER */
 
 .background {
-  background-image: url('/assets/header/header.jpg');
+  background-image: url('./assets/header/header.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -300,19 +300,41 @@ ul {
 }
 
 .fleurColor {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "fleur logo"
+  "fleur text"
+  ;
+  margin-right: 5rem;
 }
 
 .logo-fleur {
-  width: 100px;
-  height: 100px;
+  width: 35%;
+  grid-area: fleur;
+  display: block;
+  margin: auto 0 auto auto;
+}
+
+@keyframes logo-fleur {
+  from {
+    left: -500px;
+  }
 }
 
 .logo-text {
-  width: 50%;
+  width: 70%;
+  grid-area: logo;
+  display: block;
+  margin: auto;
+}
+
+.logoTextNoir {
+  filter: invert(100%);
+  grid-area: text;
+  display: block;
+  margin-right: 1rem;
 }
 
 /* ! HEADER-SLIDER */
@@ -1661,6 +1683,12 @@ footer .containerContact .containerButton a:hover {
 }
 
 @media screen and (max-width: 425px) {
+  /* HEADER */
+
+  .logoTextNoir {
+    width: 70%;
+  }
+
   /* PHILOSOPHIE */
 
   /* .article-title {
@@ -1736,9 +1764,10 @@ footer .containerContact .containerButton a:hover {
   .background {
     height: 100vh;
   }
-  /* .fleurColor {
-    width: 60%;
-  } */
+
+  .fleurColor {
+    margin-right: 7rem;
+  }
 
   /* MOUVEMENT */
 
