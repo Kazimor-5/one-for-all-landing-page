@@ -90,3 +90,32 @@ resume = () => {
     plusSlides(slideIndex);
   }, 3000);
 };
+
+// ! FAQ
+// * on récupère les éléments ciblé avec les classes
+const btns = document.querySelectorAll('.btn-down');
+const answers = document.querySelectorAll('.answers');
+
+// * pour chaque boutons dans le noeud de bouton
+btns.forEach((btn) => {
+  // * on écoute l'évènement du clique
+  btn.addEventListener('click', (e) => {
+    // * on cible le data-id du bouton ciblé via l'évènement e et le target
+    const questionID = e.target.dataset.id;
+
+    // * pour chaque réponses dans le noeud de réponse
+    answers.forEach((answer) => {
+      // * on cible le data-id de la réponse
+      const answerID = answer.dataset.id;
+
+      // * on vérifie si le data-id de la question est égale au data-id de la réponse
+      if (questionID === answerID) {
+        // * on ajoute la classe active à la réponse correspondant à la question
+        answer.classList.add('active');
+      } else {
+        // * on retire la classe active à la réponse ne correspondant pas à la question
+        answer.classList.remove('active');
+      }
+    });
+  });
+});

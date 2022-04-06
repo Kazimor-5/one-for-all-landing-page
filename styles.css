@@ -1414,6 +1414,71 @@ ul {
   margin-top: 50px;
 }
 
+/* ! FAQ */
+
+.section-faq {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+#title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--primary-purple);
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  border-radius: var(--border-radius);
+  align-items: center;
+  padding: 0.7rem;
+  background: var(--white);
+  box-shadow: var(--shadow-2);
+  width: 50%;
+  min-width: 310px;
+  max-width: 880px;
+}
+
+.questions > p {
+  margin: 0;
+  padding: 0.75rem;
+}
+
+.btn-down {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.answers {
+  display: none;
+  padding: 1rem;
+  transform: translateY(-50%);
+  transition: translate 0.3s ease-in;
+}
+
+.answers.active {
+  display: block;
+  transform: translateY(0);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.yellow {
+  color: rgb(167, 167, 25);
+}
+
+.questions:hover {
+  box-shadow: var(--shadow-4);
+}
+
 /* ! FOOTER */
 
 footer .containerFooter .cardFooter img {
