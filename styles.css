@@ -306,6 +306,9 @@ ul {
   letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
 }
+.social-links-content .et{
+  font-size: x-large;
+}
 
 .social-links {
   width: 100%;
@@ -377,7 +380,7 @@ ul {
   }
 
   .social-links-content {
-    align-items: flex-start;
+    /* align-items: flex-start; */
     width: 100%;
   }
 
