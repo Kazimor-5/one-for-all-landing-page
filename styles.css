@@ -781,6 +781,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
 }
 
 .text-soutiens-more {
@@ -1619,8 +1620,8 @@ footer .containerContact .containerButton a:hover {
 
 /*SLIDE-soutien*/
 
-.slider-show-soutien{
-  width: 99vw;
+.slider-soutien{
+  width: 600px;
   height: 500px;
   position: relative;
   overflow: hidden;
@@ -1631,7 +1632,7 @@ footer .containerContact .containerButton a:hover {
   width: 500%;
   height: 550px;
   left: -550%;
-  animation: defilment 30s ease-out infinite;
+  animation: defilment 20s ease-out infinite;
   
 }
 .slide-soutien img{
@@ -1662,9 +1663,9 @@ footer .containerContact .containerButton a:hover {
   80% {left: -400%;}
   83.5% {left: -450%;}
   85% {left: -450%;}
-  90% {left: -530%;}
-  95% {left: -530%;}
-  100% {left: -530%;}
+  90% {left: -730%;}
+  95% {left: -730%;}
+  100% {left: -730%;}
 }
 
 /* ! MEDIAQUERIES */
@@ -2158,9 +2159,9 @@ footer .containerContact .containerButton a:hover {
     80% {left: -400%;}
     83.5% {left: -450%;}
     85% {left: -450%;}
-    90% {left: -530%;}
-    95% {left: -530%;}
-    100% {left: -530%;}
+    90% {left: -730%;}
+    95% {left: -730%;}
+    100% {left: -730%;}
   }
 
   /* FOOTER */
@@ -2227,7 +2228,7 @@ footer .containerContact .containerButton a:hover {
     width: 500%;
     height: 550px;
     left: -550%;
-    animation: defilment 30s ease-out infinite;
+    animation: defilment 25s ease-out infinite;
     
   }
   .slide-soutien img{
@@ -2242,25 +2243,23 @@ footer .containerContact .containerButton a:hover {
   @keyframes defilment {
     0% {left: 0;}
     10% {left: 0%;}
-    15% {left: -100%;}
     20% {left: -100%;}
-    25% {left: -150%;}
-    30% {left: -150%;}
-    35% {left: -200%;}
-    40% {left: -200%;}
-    45% {left: -250%;}
-    50% {left: -250%;}
-    55% {left: -300%;}
-    60% {left: -300%;}
-    65% {left: -350%;}
-    70% {left: -350%;}
-    75% {left: -400%;}
-    80% {left: -400%;}
-    83.5% {left: -450%;}
-    85% {left: -450%;}
-    90% {left: -530%;}
-    95% {left: -530%;}
-    100% {left: -530%;}
+    30% {left: -100%;}
+    35% {left: -300%;}
+    40% {left: -300%;}
+    45% {left: -500%;}
+    50% {left: -500%;}
+    55% {left: -700%;}
+    60% {left: -700%;}
+    65% {left: -900%;}
+    70% {left: -900%;}
+    75% {left: -1000%;}
+    80% {left: -1000%;}
+    83.5% {left: -1200%;}
+    85% {left: -1200%;}
+    90% {left: -1450%;}
+    95% {left: -1450%;}
+    100% {left: -1450%;}
   }
 }
 
@@ -2456,7 +2455,7 @@ footer .containerContact .containerButton a:hover {
     width: 200%;
     height: 550px;
     left: -150%;
-    animation: defilment 30s ease-out infinite;
+    animation: defilment 10s ease-out infinite;
     
   }
   .slide-soutien img{
@@ -2473,18 +2472,20 @@ footer .containerContact .containerButton a:hover {
       0% {left: 0;}
       10% {left: 0%;}
 
-      30% {left: -900%;}
+      30% {left: -700%;}
 
     
-      50% {left: -900%;}
+      50% {left: -700%;}
   
   
-      70% {left: -1500%;}
+      70% {left: -1000%;}
+      80% {left: -1000%;}
    
-      90% {left: -2000%;}
+      90% {left: -1450%;}
      
-      100% {left: -2000%;}
+      100% {left: -1450%;}
     
   
-}
+  }
+
 }
