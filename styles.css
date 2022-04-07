@@ -1392,12 +1392,13 @@ ul {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: var(--bg-color);
+  
 }
 
 .events .containerIllustration img {
-  height: 70vh;
-  width: 600px;
+  height: 500px;
+  padding: var(--grey-50);
+  width: 500px;background-color: var(--bg-color);
 }
 
 .events .containerButton {
