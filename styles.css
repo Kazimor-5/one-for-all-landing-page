@@ -303,17 +303,15 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 
-  "fleur logo"
-  "fleur text"
-  ;
+  grid-template-areas:
+    'fleur logo'
+    'fleur text';
   margin-right: 5rem;
 }
 
 .logo-fleur {
   width: 35%;
   grid-area: fleur;
-  display: block;
   margin: auto 0 auto auto;
 }
 
