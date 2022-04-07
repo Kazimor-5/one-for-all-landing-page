@@ -1150,8 +1150,10 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  background-color: var(--grey-200);
+  padding-bottom: 50px;
 }
 
 .challenge_text_boutton h4 {
@@ -1162,6 +1164,7 @@ ul {
 
 .challenge_titre {
   align-self: flex-start;
+  margin-left: 50px;
 }
 
 .challenge_titre hr {
@@ -1171,14 +1174,6 @@ ul {
   border: 2px solid var(--primary-purple);
 }
 
-.challenge {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.challenge .containerImg {
-  margin-top: 50px;
-}
 
 .challenge_text_boutton {
   display: flex;
@@ -1190,7 +1185,8 @@ ul {
 .boutton_challenge {
   width: 100%;
   cursor: pointer;
-  margin-top: 20px;
+  margin: auto;
+  margin-top: 30px;
   text-align: center;
 }
 
