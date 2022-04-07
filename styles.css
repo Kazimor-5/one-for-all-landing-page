@@ -1155,7 +1155,7 @@ ul {
 }
 
 .challenge_text_boutton h4 {
-  color: rgb(119, 0, 255);
+  color: var(--primary-purple);
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -1167,10 +1167,8 @@ ul {
 .challenge_titre hr {
   margin-top: -10px;
   width: 250px;
-  background-color: rgb(119, 0, 255);
-  border: 2px solid rgb(119, 0, 255);
-  size: 100px;
-  float: left;
+  background-color: var(--primary-purple);
+  border: 2px solid var(--primary-purple);
 }
 
 .challenge {
