@@ -100,8 +100,8 @@ const answers = document.querySelectorAll('.answers');
 btns.forEach((btn) => {
   // * on écoute l'évènement du clique
   btn.addEventListener('click', (e) => {
-    // * on cible le data-id du bouton ciblé via l'évènement e et le target
-    const questionID = e.target.dataset.id;
+    // * on cible le data-id du bouton ciblé via l'évènement e et le currentTarget
+    const questionID = e.currentTarget.dataset.id;
 
     // * pour chaque réponses dans le noeud de réponse
     answers.forEach((answer) => {
@@ -111,7 +111,7 @@ btns.forEach((btn) => {
       // * on vérifie si le data-id de la question est égale au data-id de la réponse
       if (questionID === answerID) {
         // * on ajoute la classe active à la réponse correspondant à la question
-        answer.classList.add('active');
+        answer.classList.toggle('active');
       } else {
         // * on retire la classe active à la réponse ne correspondant pas à la question
         answer.classList.remove('active');

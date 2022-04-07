@@ -1453,6 +1453,12 @@ ul {
 .btn-down {
   padding: 0.5rem;
   font-size: 1.2rem;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in;
+}
+
+.btn-down.active {
+  transform: rotate(0deg);
 }
 
 .answers {
