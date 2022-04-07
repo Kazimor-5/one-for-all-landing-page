@@ -1659,6 +1659,12 @@ footer .containerContact .containerButton a:hover {
 }
 
 @media screen and (max-width: 425px) {
+  /* HEADER */
+
+  .logoTextNoir {
+    width: 70%;
+  }
+
   /* PHILOSOPHIE */
 
   /* .article-title {
