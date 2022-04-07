@@ -1408,12 +1408,11 @@ ul {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: var(--bg-color);
 }
 
 .events .containerIllustration img {
   height: 70vh;
-  width: 600px;
+  width: auto;
 }
 
 .events .containerButton {

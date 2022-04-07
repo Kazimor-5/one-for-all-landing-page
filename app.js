@@ -89,19 +89,3 @@ resume = () => {
     plusSlides(slideIndex);
   }, 5000);
 };
-
-/*slide-event*/
-let myIndex = 0;
-carousel();
-
-function carousel() {
-  let i;
-  let x = document.getElementsByClassName("slide-event");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
