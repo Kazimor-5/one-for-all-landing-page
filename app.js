@@ -91,18 +91,3 @@ resume = () => {
   }, 5000);
 };
 
-/*slide-soutien*/
-let index = 0;
-slide();
-
-function slide() {
-  let i;
-  let slideSoutien = document.getElementsByClassName("slide-soutien");
-  for (i = 0; i < slideEvent.length; i++) {
-    slideEvent[i].style.display = "none";  
-  }
-  index++;
-  if (index > slideSoutien.length) {index = 1}    
-  x[index-1].style.display = "block";  
-  setTimeout(slide, 5000); // Change image every 2 seconds
-}
