@@ -19,11 +19,11 @@ closeSidebarBtn.addEventListener('click', () => {
 
 // ! SLIDER
 
-var slideIndex = 1;
+let  slideIndex = 1;
 
-var myTimer;
+let myTimer;
 
-var slideshowContainer;
+let slideshowContainer;
 
 window.addEventListener('load', function () {
   showSlides(slideIndex);
@@ -47,11 +47,11 @@ function plusSlides(n) {
   if (n === -1) {
     myTimer = setInterval(function () {
       plusSlides(n + 2);
-    }, 3000);
+    }, 5000);
   } else {
     myTimer = setInterval(function () {
       plusSlides(n + 1);
-    }, 3000);
+    }, 5000);
   }
 }
 
@@ -59,14 +59,13 @@ function currentSlide(n) {
   clearInterval(myTimer);
   myTimer = setInterval(function () {
     plusSlides(n + 1);
-  }, 3000);
+  }, 5000);
   showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName('mySlides');
-  var dots = document.getElementsByClassName('dot');
+  let i;
+  let slides = document.getElementsByClassName('mySlides');
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -88,21 +87,21 @@ resume = () => {
   clearInterval(myTimer);
   myTimer = setInterval(function () {
     plusSlides(slideIndex);
-  }, 3000);
+  }, 5000);
 };
 
 /*slide-event*/
 let myIndex = 0;
 carousel();
 
-function carousel() {
-  let i;
-  let slideEvent = document.getElementsByClassName("slide-event");
-  for (i = 0; i < slideEvent.length; i++) {
-    slideEvent[i].style.display = "none";  
+  function carousel() {
+    let i;
+    let slide = document.getElementsByClassName("slide-event");
+    for (i = 0; i < slide.length; i++) {
+      slide[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > slide.length) {myIndex = 1}    
+    slide[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
   }
-  myIndex++;
-  if (myIndex > slideEvent.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
