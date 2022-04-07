@@ -90,3 +90,19 @@ resume = () => {
     plusSlides(slideIndex);
   }, 3000);
 };
+
+/*slide-event*/
+let myIndex = 0;
+carousel();
+
+function carousel() {
+  let i;
+  let slideEvent = document.getElementsByClassName("slide-event");
+  for (i = 0; i < slideEvent.length; i++) {
+    slideEvent[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > slideEvent.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
