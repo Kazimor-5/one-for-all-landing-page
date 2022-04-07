@@ -1401,7 +1401,7 @@ ul {
 }
 
 .events .containerIllustration {
-  width: 35%;
+  width: 45%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -1413,7 +1413,7 @@ ul {
 
 .events .containerIllustration img {
   height: 70vh;
-  width: auto;
+  width: 600px;
 }
 
 .events .containerButton {
@@ -2146,20 +2146,20 @@ footer .containerContact .containerButton a:hover {
     10% {left: 0%;}
     15% {left: -100%;}
     20% {left: -100%;}
-    25% {left: -150%;}
-    30% {left: -150%;}
-    35% {left: -200%;}
-    40% {left: -200%;}
-    45% {left: -250%;}
-    50% {left: -250%;}
-    55% {left: -300%;}
-    60% {left: -300%;}
-    65% {left: -350%;}
-    70% {left: -350%;}
-    75% {left: -400%;}
-    80% {left: -400%;}
-    83.5% {left: -450%;}
-    85% {left: -450%;}
+    25% {left: -200%;}
+    30% {left: -200%;}
+    35% {left: -300%;}
+    40% {left: -300%;}
+    45% {left: -400%;}
+    50% {left: -400%;}
+    55% {left: -450%;}
+    60% {left: -450%;}
+    65% {left: -500%;}
+    70% {left: -500%;}
+    75% {left: -600%;}
+    80% {left: -600%;}
+    83.5% {left: -650%;}
+    85% {left: -650%;}
     90% {left: -730%;}
     95% {left: -730%;}
     100% {left: -730%;}
@@ -2229,7 +2229,7 @@ footer .containerContact .containerButton a:hover {
     width: 500%;
     height: 550px;
     left: -550%;
-    animation: defilment 25s ease-out infinite;
+    animation: defilment 30s ease-out infinite;
     
   }
   .slide-soutien img{
@@ -2244,8 +2244,10 @@ footer .containerContact .containerButton a:hover {
   @keyframes defilment {
     0% {left: 0;}
     10% {left: 0%;}
+    15% {left: -100%;}
     20% {left: -100%;}
-    30% {left: -100%;}
+    25% {left: -200%;}
+    30% {left: -200%;}
     35% {left: -300%;}
     40% {left: -300%;}
     45% {left: -500%;}
