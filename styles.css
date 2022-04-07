@@ -287,7 +287,7 @@ ul {
 /* ! HEADER */
 
 .background {
-  background-image: url('/assets/header/header.jpg');
+  background-image: url('./assets/header/header.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -295,24 +295,22 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 0;
-  position: relative;
-}
-
-.fleurColor {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.logo-fleur {
-  width: 100px;
-  height: 100px;
 }
 
 .logo-text {
-  width: 50%;
+  width: 75%;
+}
+
+.fleurColor {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-fleur {
+  width: 25%;
 }
 
 /* ! HEADER-SLIDER */
@@ -1736,9 +1734,6 @@ footer .containerContact .containerButton a:hover {
   .background {
     height: 100vh;
   }
-  /* .fleurColor {
-    width: 60%;
-  } */
 
   /* MOUVEMENT */
 
@@ -1852,6 +1847,16 @@ footer .containerContact .containerButton a:hover {
 }
 
 @media screen and (min-width: 1024px) {
+  /* HEADER */
+
+  .fleurColor {
+    width: 60%;
+  }
+
+  .logo-fleur {
+    width: 20%;
+  }
+
   /* MOUVEMENT */
 
   .img-fleur > img {
