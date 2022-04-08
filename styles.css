@@ -1381,24 +1381,26 @@ ul {
 
 .events .containerText .containerIllustration2 img {
   width: 100%;
-  height: auto;
+  /* height: 100%; */
 }
 
 .events .containerIllustration {
-  width: 45%;
+  height: 500px;
+  width: 700px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   position: absolute;
   bottom: 0;
   right: 0;
-  
+  background-color: var(--white);
 }
 
 .events .containerIllustration img {
   height: 500px;
+  width: 800px;
   padding: var(--grey-50);
-  width: 500px;background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .events .containerButton {
@@ -1786,15 +1788,15 @@ footer .containerContact .containerButton a:hover {
     width: 400px;
   }
 
-  .events .containerText .containerIllustration2{
+  .events .containerText .containerIllustration2 {
     width: 70%;
   }
 
-  .events .containerText .containerButton{
+  .events .containerText .containerButton {
     width: 70%;
   }
 
-  .events .containerText h2{
+  .events .containerText h2 {
     font-size: 2.441rem;
   }
 
@@ -2201,7 +2203,7 @@ footer .containerContact .containerButton a:hover {
     width: 100%;
   }
 
-  .events .containerText .containerButton{
+  .events .containerText .containerButton {
     width: 100%;
   }
 
