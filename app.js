@@ -28,7 +28,7 @@ closeSidebarBtn.addEventListener('click', () => {
   navLogo.style.display = 'block';
 });
 
-// ! SLIDER
+// ! HEADRER-SLIDER
 
 var slideIndex = 1;
 
@@ -101,6 +101,25 @@ resume = () => {
     plusSlides(slideIndex);
   }, 5000);
 };
+
+// ! SLIDE-EVENT
+/slide-event/;
+let myIndex = 0;
+carousel();
+
+function carousel() {
+  let i;
+  let slide = document.getElementsByClassName('slide-event');
+  for (i = 0; i < slide.length; i++) {
+    slide[i].style.display = 'none';
+  }
+  myIndex++;
+  if (myIndex > slide.length) {
+    myIndex = 1;
+  }
+  slide[myIndex - 1].style.display = 'block';
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 
 // ! ANIMATIONS
 const slideLeft = document.querySelectorAll('.slide-left');
