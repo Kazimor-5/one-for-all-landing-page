@@ -1031,13 +1031,14 @@ h4 {
   transform: scale(1);
 }
 
-.slider-show-soutien{
+.slider-soutien{
     width: 60vw;
     max-width: 800px;
     height: 500px;
     position: relative;
     overflow: hidden;
   }
+
   .slides-soutien{ 
     position: absolute;
     display: flex;
@@ -1045,18 +1046,19 @@ h4 {
     height: 100%;
     left: -1200%;
     animation: slide-soutien 50s ease-out infinite;
-
   }
+
   .slides-soutien:hover{
     animation-play-state: paused;/au survol de la souris l'animation se met en pause/
   }
+
   .slide-soutien img{
     width: 100%; 
     height: 100%;
     object-fit: cover;
   }
-  .slide-soutien{
 
+  .slide-soutien{
     width: 100%;
     height: 100%;
   }
@@ -1077,7 +1079,6 @@ h4 {
     100%{
       left: -1200%;
     }
-
   }
 
 /* ! RESEAU */
@@ -1621,8 +1622,6 @@ h4 {
   font-weight: 700;
 }
 
-
-
 .events .containerText h2 {
   color: black;
   width: 80%;
@@ -1630,7 +1629,7 @@ h4 {
 }
 
 .events .containerText .containerIllustration2 {
-  width: 70%;
+  width: 60%;
   margin-top: 50px;
   z-index: 2;
   position: relative;
@@ -2219,7 +2218,9 @@ footer .cardFooter a:hover {
 
   /* EVENEMENT */
 
-  
+  .containerIllustration2 {
+    width: 40%;
+  }
 
   /* RESEAU */
   .planet > img {
@@ -2363,8 +2364,8 @@ footer .cardFooter a:hover {
     font-size: 3vw;
   }
 
-  .events .containerText .containerIllustration2 {
-    width: 100%;
+.containerIllustration2 {
+    width: 50%;
   }
 
   .events .containerText .containerButton {
